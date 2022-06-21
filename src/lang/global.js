@@ -9,7 +9,7 @@ export const artData = [
             <>
                 I'm also a visual artist who emphasizes on the synergies of
                 classic photography and computer generated imagery (CGI). My
-                skills include photography, digital art and animation.
+                skills include analog photography, digital art and animation.
                 <br />
                 <br />
                 Visit www.julianschievelkamp.com
