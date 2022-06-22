@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 import Paragraph from "components/Elements/Paragraph";
 
-import { borderRadius, shadow, queries } from "styles/variables";
+import { borderRadius, shadow, softShadow, queries } from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
@@ -14,6 +14,12 @@ export const Link = styled.a`
     max-width: 50rem;
     margin-bottom: 2rem;
     text-decoration: none;
+
+    opacity: 0;
+    animation-name: ${fadeIn};
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: ${(props) => `${props.index * 0.2}s`};
 `;
 
 export const StyledCard = styled.div`
@@ -24,27 +30,32 @@ export const StyledCard = styled.div`
     box-shadow: ${shadow};
     border-radius: ${borderRadius.edged};
     padding: 1rem;
-    opacity: 0;
-
-    animation-name: ${fadeIn};
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: ${(props) => `${props.position * 0.2}s`};
-
-    &:hover {
-        .image {
-            transform: scale(1.1);
-        }
-    }
+    transition: 500ms;
 
     @media ${queries.md} {
         flex-direction: row;
     }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: ${softShadow};
+
+        .image {
+            transform: scale(1.1);
+        }
+    }
+`;
+
+export const Headline = styled(Paragraph)`
+    background: #ffca00;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 3px;
 `;
 
 export const ImageWrapper = styled.div`
     width: 100%;
-    height: 10rem;
+    height: 20rem;
     overflow: hidden;
     border-radius: 6px;
     margin-right: 1rem;

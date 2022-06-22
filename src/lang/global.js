@@ -10,7 +10,8 @@ export const portfolioData = [
             <>
                 I'm also a visual artist who emphasizes on the synergies of
                 classic photography and computer generated imagery (CGI). My
-                skills include analog photography, digital art and animation.
+                skills include analog photography as well as digital art and
+                animation.
                 <br />
                 <br />
                 Visit www.julianschievelkamp.com
@@ -30,6 +31,6 @@ export const portfolioData = [
         image: placeholder,
         headline: "Pixie Slide",
         text: "Pixie Slide",
-        badges: ["Unity Engine", ".NET (C#)", "Blender"],
+        badges: ["Unity Engine", ".NET (C#)", "3D"],
     },
 ];

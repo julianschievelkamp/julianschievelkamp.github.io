@@ -1,8 +1,3 @@
-export const chartTheme = {
-    blue: ["#23395B", "#406E8E", "#8EA8C3", "#CBF7ED"],
-    yellow: ["#533E2D", "#A27035", "#B88B4A", "#DDCA7D"],
-};
-
 export const lightTheme = {
     body: "#FFF",
     text: "#363537",

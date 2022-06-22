@@ -4,23 +4,25 @@ import PropTypes from "prop-types";
 import {
     Link,
     StyledCard,
+    Headline,
     ImageWrapper,
     Image,
     Info,
     BadgeWrapper,
     Badge,
 } from "./styles";
+
 import Paragraph from "components/Elements/Paragraph";
 
 const Card = ({ link, image, headline, text, badges, index }) => {
     return (
-        <Link href={link} target="_blank">
-            <StyledCard position={index}>
+        <Link href={link} target="_blank" index={index}>
+            <StyledCard>
                 <ImageWrapper>
                     <Image src={image} className="image" />
                 </ImageWrapper>
                 <Info>
-                    <Paragraph bold>{headline}</Paragraph>
+                    <Headline bold>{headline}</Headline>
                     <Paragraph margin="1rem 0">{text}</Paragraph>
 
                     <BadgeWrapper>
