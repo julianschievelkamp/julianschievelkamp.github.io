@@ -3,13 +3,13 @@ import Card from "components/Layout/Card";
 import GlobalStyle from "styles/global";
 
 import { portfolioData } from "lang/global";
-import Sidebar from "components/Layout/Sidebar";
+import Header from "components/Layout/Header";
 
 function App() {
     return (
         <div className="App">
             <GlobalStyle />
-            <Sidebar />
+            <Header />
 
             {portfolioData.map((item, index) => {
                 return (

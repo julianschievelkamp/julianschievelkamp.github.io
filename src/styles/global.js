@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { queries } from "styles/variables";
 
 export default createGlobalStyle`
     * {
@@ -16,7 +17,14 @@ export default createGlobalStyle`
         min-height: 100vh;
         padding: 2rem;
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+
+        @media ${queries.lg} {
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-around;
+            overflow: hidden;
+        }
     }
 `;

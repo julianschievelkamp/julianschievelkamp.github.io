@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 import Paragraph from "components/Elements/Paragraph";
 
-import { borderRadius, shadow, softShadow, queries } from "styles/variables";
+import { borderRadius, shadow, softShadow } from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
@@ -11,9 +11,10 @@ const fadeIn = keyframes`
 
 export const Link = styled.a`
     width: 100%;
-    max-width: 50rem;
-    margin-bottom: 2rem;
+    max-width: 40rem;
     text-decoration: none;
+    flex-grow: 1;
+    margin: 1rem;
 
     opacity: 0;
     animation-name: ${fadeIn};
@@ -31,10 +32,6 @@ export const StyledCard = styled.div`
     border-radius: ${borderRadius.edged};
     padding: 1rem;
     transition: 500ms;
-
-    @media ${queries.md} {
-        flex-direction: row;
-    }
 
     &:hover {
         transform: translateY(-3px);
@@ -58,14 +55,7 @@ export const ImageWrapper = styled.div`
     height: 20rem;
     overflow: hidden;
     border-radius: 6px;
-    margin-right: 1rem;
     margin-bottom: 1rem;
-
-    @media ${queries.md} {
-        width: 50%;
-        height: unset;
-        margin-bottom: 0;
-    }
 `;
 
 export const Image = styled.div`
@@ -81,10 +71,6 @@ export const Image = styled.div`
 export const Info = styled.div`
     width: 100%;
     color: black;
-
-    @media ${queries.md} {
-        width: 50%;
-    }
 `;
 
 export const Badge = styled(Paragraph)`

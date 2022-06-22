@@ -9,7 +9,7 @@ const Paragraph = (props) => {
 
 Paragraph.propTypes = {
     children: PropTypes.any.isRequired,
-    center: PropTypes.bool,
+    textAlign: PropTypes.string,
     bold: PropTypes.bool,
     margin: PropTypes.string,
 };

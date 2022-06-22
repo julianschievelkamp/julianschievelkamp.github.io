@@ -23,7 +23,9 @@ const Card = ({ link, image, headline, text, badges, index }) => {
                 </ImageWrapper>
                 <Info>
                     <Headline bold>{headline}</Headline>
-                    <Paragraph margin="1rem 0">{text}</Paragraph>
+                    <Paragraph margin="1rem 0" textAlign="justify">
+                        {text}
+                    </Paragraph>
 
                     <BadgeWrapper>
                         {badges.map((badge) => {
