@@ -1,6 +1,7 @@
 import portfolio from "assets/img/portfolio.jpg";
+import placeholder from "assets/img/placeholder.png";
 
-export const artData = [
+export const portfolioData = [
     {
         link: "https://www.julianschievelkamp.com",
         image: portfolio,
@@ -17,19 +18,16 @@ export const artData = [
         ),
         badges: ["Adobe Software", "Unreal Engine", "Blender"],
     },
-];
-
-export const appData = [
     {
         link: "https://julianschievelkamp.github.io/ChartParty/",
-        image: "",
+        image: placeholder,
         headline: "Chart Party",
         text: "Chart Party",
-        badges: ["React", "UI / UX"],
+        badges: ["React Native", "Styled Components", "UI / UX"],
     },
     {
         link: "https://julianschievelkamp.github.io/PixieSlide/",
-        image: "",
+        image: placeholder,
         headline: "Pixie Slide",
         text: "Pixie Slide",
         badges: ["Unity Engine", ".NET (C#)", "Blender"],

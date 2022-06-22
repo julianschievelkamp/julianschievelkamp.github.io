@@ -11,4 +11,12 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
     }
+
+    .App {
+        min-height: 100vh;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 `;

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import {
+    Link,
     StyledCard,
     ImageWrapper,
     Image,
@@ -11,23 +12,25 @@ import {
 } from "./styles";
 import Paragraph from "components/Elements/Paragraph";
 
-const Card = ({ link, image, headline, text, badges }) => {
+const Card = ({ link, image, headline, text, badges, index }) => {
     return (
-        <StyledCard href={link} target="_blank">
-            <ImageWrapper>
-                <Image src={image} className="image" />
-            </ImageWrapper>
-            <Info>
-                <Paragraph bold>{headline}</Paragraph>
-                <Paragraph margin="1rem 0">{text}</Paragraph>
+        <Link href={link} target="_blank">
+            <StyledCard position={index}>
+                <ImageWrapper>
+                    <Image src={image} className="image" />
+                </ImageWrapper>
+                <Info>
+                    <Paragraph bold>{headline}</Paragraph>
+                    <Paragraph margin="1rem 0">{text}</Paragraph>
 
-                <BadgeWrapper>
-                    {badges.map((badge) => {
-                        return <Badge key={badge}>{badge}</Badge>;
-                    })}
-                </BadgeWrapper>
-            </Info>
-        </StyledCard>
+                    <BadgeWrapper>
+                        {badges.map((badge) => {
+                            return <Badge key={badge}>{badge}</Badge>;
+                        })}
+                    </BadgeWrapper>
+                </Info>
+            </StyledCard>
+        </Link>
     );
 };
 
