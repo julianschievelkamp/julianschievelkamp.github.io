@@ -2,14 +2,14 @@ import styled, { keyframes } from "styled-components";
 
 import Paragraph from "components/Elements/Paragraph";
 
-import { borderRadius, shadow, softShadow } from "styles/variables";
+import { borderRadius, shadow, softShadow, transition } from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
     100% { opacity: 1;  transform: translateY(0);}
 `;
 
-export const Link = styled.a`
+export const Link = styled.div`
     width: 100%;
     max-width: 40rem;
     text-decoration: none;
@@ -37,7 +37,7 @@ export const StyledCard = styled.div`
         transform: translateY(-3px);
         box-shadow: ${softShadow};
 
-        .image {
+        .preview {
             transform: scale(1.05);
         }
     }
@@ -81,7 +81,22 @@ export const Badge = styled(Paragraph)`
     margin: 0.5rem;
 `;
 
-export const BadgeWrapper = styled.div`
+export const Flex = styled.div`
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: ${(props) => props.flexWrap};
+    justify-content: ${(props) => props.justifyContent};
+    align-items: ${(props) => props.alignItems};
+    margin: ${(props) => props.margin};
+`;
+
+export const Thumb = styled.div`
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-left: 0.125rem;
+    border-color: ${(props) => (props.isActive ? "#ffca00" : "transparent")};
+    transition: ${transition};
 `;
