@@ -12,17 +12,7 @@ function App() {
             <Header />
 
             {portfolioData.map((item, index) => {
-                return (
-                    <Card
-                        index={index}
-                        key={item.headline}
-                        badges={item.badges}
-                        image={item.image}
-                        link={item.link}
-                        headline={item.headline}
-                        text={item.text}
-                    />
-                );
+                return <Card index={index} key={item.headline} item={item} />;
             })}
         </div>
     );

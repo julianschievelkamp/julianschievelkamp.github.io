@@ -1,10 +1,13 @@
-import portfolio from "assets/img/portfolio.jpg";
+import portfolio1 from "assets/img/portfolio1.jpg";
+import portfolio2 from "assets/img/portfolio2.jpg";
+import portfolio3 from "assets/img/portfolio3.jpg";
+
 import placeholder from "assets/img/placeholder.png";
 
 export const portfolioData = [
     {
         link: "https://www.julianschievelkamp.com",
-        image: portfolio,
+        previews: [portfolio1, portfolio2, portfolio3],
         headline: "Artist Portfolio",
         text: (
             <>
@@ -17,20 +20,20 @@ export const portfolioData = [
                 Visit <i>www.julianschievelkamp.com</i>
             </>
         ),
-        badges: ["Adobe Software", "Unreal Engine", "Blender"],
+        badges: ["Photography", "Adobe Software", "Unreal Engine"],
     },
     {
         link: "https://julianschievelkamp.github.io/ChartParty/",
-        image: placeholder,
+        previews: [placeholder, placeholder],
         headline: "Chart Party",
         text: "Chart Party",
         badges: ["React Native", "Styled Components", "UI / UX"],
     },
     {
         link: "https://julianschievelkamp.github.io/PixieSlide/",
-        image: placeholder,
+        previews: [placeholder, placeholder],
         headline: "Pixie Slide",
         text: "Pixie Slide",
-        badges: ["Unity Engine", ".NET (C#)", "3D"],
+        badges: ["Unity Engine", ".NET (C#)", "Blender"],
     },
 ];

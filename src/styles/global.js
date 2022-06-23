@@ -15,7 +15,7 @@ export default createGlobalStyle`
 
     .App {
         min-height: 100vh;
-        padding: 2rem;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
