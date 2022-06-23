@@ -15,6 +15,7 @@ export const Link = styled.div`
     text-decoration: none;
     flex-grow: 1;
     margin: 1rem;
+    cursor: pointer;
 
     opacity: 0;
     animation-name: ${fadeIn};
@@ -95,6 +96,7 @@ export const Thumb = styled.div`
     cursor: pointer;
     overflow: hidden;
     transition: ${transition};
-    border: 3px solid;
-    border-color: ${(props) => (props.isActive ? "#ffca00" : "transparent")};
+    background: ${(props) => (props.isActive ? "#ffca00" : "transparent")};
+    padding: 3px;
+    margin-left: 2px;
 `;
