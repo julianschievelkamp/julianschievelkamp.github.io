@@ -93,10 +93,8 @@ export const Thumb = styled.div`
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
-    border: 3px solid;
-    border-radius: 3px;
     overflow: hidden;
-    margin-left: 0.125rem;
-    border-color: ${(props) => (props.isActive ? "#ffca00" : "transparent")};
     transition: ${transition};
+    border: 3px solid;
+    border-color: ${(props) => (props.isActive ? "#ffca00" : "transparent")};
 `;

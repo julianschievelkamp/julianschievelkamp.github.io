@@ -19,6 +19,8 @@ export default createGlobalStyle`
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
 
         @media ${queries.lg} {
             flex-direction: row;
