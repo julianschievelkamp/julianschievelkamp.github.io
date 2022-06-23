@@ -1,13 +1,14 @@
 import portfolio1 from "assets/img/portfolio1.jpg";
 import portfolio2 from "assets/img/portfolio2.jpg";
 import portfolio3 from "assets/img/portfolio3.jpg";
+import portfolio4 from "assets/img/portfolio4.jpg";
 
 import placeholder from "assets/img/placeholder.png";
 
 export const portfolioData = [
     {
         link: "https://www.julianschievelkamp.com",
-        previews: [portfolio1, portfolio2, portfolio3],
+        previews: [portfolio1, portfolio2, portfolio3, portfolio4],
         headline: "Artist Portfolio",
         text: (
             <>
