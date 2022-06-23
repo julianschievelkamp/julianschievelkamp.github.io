@@ -93,7 +93,7 @@ export const Thumb = styled.div`
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
-    border: 2px solid;
+    border: 3px solid;
     border-radius: 3px;
     overflow: hidden;
     margin-left: 0.125rem;

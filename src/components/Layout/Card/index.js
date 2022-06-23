@@ -29,14 +29,14 @@ const Card = ({ item, index }) => {
                         <Headline bold>{item.headline}</Headline>
 
                         <Flex margin="0 0 0 0.5rem">
-                            {item.previews.map((preview, index) => {
+                            {item.previews.map((item, index) => {
                                 return (
                                     <Thumb
-                                        key={preview + index}
+                                        key={item + index}
                                         onClick={() => setPreview(index)}
                                         isActive={preview === index}
                                     >
-                                        <Image src={preview} />
+                                        <Image src={item} />
                                     </Thumb>
                                 );
                             })}
