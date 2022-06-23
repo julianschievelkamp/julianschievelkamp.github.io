@@ -5,6 +5,8 @@ import portfolio4 from "assets/img/portfolio4.jpg";
 
 import placeholder from "assets/img/placeholder.png";
 
+import pixieSlide from "assets/img/pixieslide.png";
+
 export const portfolioData = [
     {
         link: "https://www.julianschievelkamp.com",
@@ -18,7 +20,11 @@ export const portfolioData = [
                 animation.
                 <br />
                 <br />
-                <a href="https://www.julianschievelkamp.com" target="_blank">
+                <a
+                    href="https://www.julianschievelkamp.com"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     www.julianschievelkamp.com
                 </a>
             </>
@@ -34,9 +40,9 @@ export const portfolioData = [
     },
     {
         link: "https://julianschievelkamp.github.io/PixieSlide/",
-        previews: [placeholder, placeholder],
+        previews: [pixieSlide, pixieSlide],
         headline: "Pixie Slide",
-        text: "Pixie Slide",
+        text: "Pixie Slide is an upcoming slide 'n' run puzzle game and will debut on android.",
         badges: ["Unity Engine", ".NET (C#)", "Blender"],
     },
 ];
