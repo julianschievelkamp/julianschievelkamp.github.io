@@ -9,7 +9,7 @@ const fadeIn = keyframes`
     100% { opacity: 1;  transform: translateY(0);}
 `;
 
-export const Link = styled.div`
+export const StyledCard = styled.div`
     width: 100%;
     max-width: 40rem;
     flex-grow: 1;
@@ -22,7 +22,7 @@ export const Link = styled.div`
     animation-delay: ${(props) => `${props.index * 0.2}s`};
 `;
 
-export const StyledCard = styled.div`
+export const Content = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -54,6 +54,7 @@ export const Headline = styled.button`
     border: none;
     font-weight: bold;
     font-size: 1rem;
+    line-height: 1.5;
     cursor: pointer;
 `;
 
@@ -74,11 +75,6 @@ export const Image = styled.div`
     width: 100%;
     height: 100%;
     transition: 500ms;
-`;
-
-export const Info = styled.div`
-    width: 100%;
-    color: black;
 `;
 
 export const Badge = styled(Paragraph)`
