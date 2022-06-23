@@ -19,24 +19,23 @@ const Card = ({ item, index }) => {
     const [preview, setPreview] = useState(0);
 
     return (
-        <Link index={index} onClick={() => window.open(item.link)}>
+        <Link index={index}>
             <StyledCard>
-                <ImageWrapper>
+                <ImageWrapper onClick={() => window.open(item.link)}>
                     <Image src={item.previews[preview]} className="preview" />
                 </ImageWrapper>
                 <Info>
                     <Flex justifyContent="space-between">
-                        <Headline bold>{item.headline}</Headline>
+                        <Headline onClick={() => window.open(item.link)}>
+                            {item.headline}
+                        </Headline>
 
                         <Flex margin="0 0 0 0.5rem">
                             {item.previews.map((item, index) => {
                                 return (
                                     <Thumb
                                         key={item + index}
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            setPreview(index);
-                                        }}
+                                        onClick={() => setPreview(index)}
                                         isActive={preview === index}
                                     >
                                         <Image src={item} />

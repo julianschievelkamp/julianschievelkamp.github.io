@@ -17,7 +17,9 @@ export const portfolioData = [
                 animation.
                 <br />
                 <br />
-                Visit <i>www.julianschievelkamp.com</i>
+                <a href="https://www.julianschievelkamp.com" target="_blank">
+                    www.julianschievelkamp.com
+                </a>
             </>
         ),
         badges: ["Photography", "Adobe Software", "Unreal Engine"],

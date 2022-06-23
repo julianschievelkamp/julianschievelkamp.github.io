@@ -12,10 +12,8 @@ const fadeIn = keyframes`
 export const Link = styled.div`
     width: 100%;
     max-width: 40rem;
-    text-decoration: none;
     flex-grow: 1;
     margin: 1rem;
-    cursor: pointer;
 
     opacity: 0;
     animation-name: ${fadeIn};
@@ -34,6 +32,10 @@ export const StyledCard = styled.div`
     padding: 1rem;
     transition: 500ms;
 
+    a {
+        text-decoration: none;
+    }
+
     &:hover {
         transform: translateY(-3px);
         box-shadow: ${softShadow};
@@ -44,11 +46,15 @@ export const StyledCard = styled.div`
     }
 `;
 
-export const Headline = styled(Paragraph)`
+export const Headline = styled.button`
     background: #ffca00;
     padding: 0.5rem 1rem;
     display: inline-block;
     border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
 `;
 
 export const ImageWrapper = styled.div`
@@ -57,6 +63,7 @@ export const ImageWrapper = styled.div`
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 1rem;
+    cursor: pointer;
 `;
 
 export const Image = styled.div`
@@ -99,4 +106,9 @@ export const Thumb = styled.div`
     background: ${(props) => (props.isActive ? "#ffca00" : "transparent")};
     padding: 3px;
     margin-left: 2px;
+    border-radius: 3px;
+
+    div {
+        border-radius: 3px;
+    }
 `;
