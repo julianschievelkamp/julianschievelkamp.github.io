@@ -11,9 +11,13 @@ function App() {
             <GlobalStyle />
             <Header />
 
-            {portfolioData.map((item, index) => {
-                return <Card index={index} key={item.headline} item={item} />;
-            })}
+            <div className="card-wrapper">
+                {portfolioData.map((item, index) => {
+                    return (
+                        <Card index={index} key={item.headline} item={item} />
+                    );
+                })}
+            </div>
         </div>
     );
 }

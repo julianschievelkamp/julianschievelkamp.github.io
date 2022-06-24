@@ -14,10 +14,9 @@ export const portfolioData = [
         headline: "Artist Portfolio",
         text: (
             <>
-                I'm also a visual artist who emphasizes on the synergies of
-                classic photography and computer generated imagery (CGI). My
-                skills include analog photography as well as digital art and
-                animation.
+                I'm a visual artist who emphasizes on the synergies of classic
+                photography and computer generated imagery (CGI). My skills
+                include analog photography as well as digital art and animation.
                 <br />
                 <br />
                 <a
@@ -32,14 +31,14 @@ export const portfolioData = [
         badges: ["Photography", "Adobe Software", "Unreal Engine"],
     },
     {
-        link: "https://julianschievelkamp.github.io/ChartParty/",
+        link: "#",
         previews: [placeholder, placeholder],
         headline: "Chart Party",
         text: "Chart Party",
         badges: ["React Native", "Styled Components", "UI / UX"],
     },
     {
-        link: "https://julianschievelkamp.github.io/PixieSlide/",
+        link: "#",
         previews: [pixieSlide, pixieSlide],
         headline: "Pixie Slide",
         text: "Pixie Slide is an upcoming slide 'n' run puzzle game and will debut on android.",

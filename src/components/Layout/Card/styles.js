@@ -74,7 +74,7 @@ export const Image = styled.div`
     background-position: center;
     width: 100%;
     height: 100%;
-    transition: 500ms;
+    transition: ${transition};
 `;
 
 export const Badge = styled(Paragraph)`
