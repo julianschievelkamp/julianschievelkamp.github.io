@@ -12,6 +12,16 @@ export default createGlobalStyle`
     html, body {
         margin: 0;
         padding: 0;
+
+        // scroll fix for card fade in
+        @media ${queries.lg} {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
     }
 
     #root {
