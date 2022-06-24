@@ -60,6 +60,7 @@ export const Headline = styled.button`
 
 export const ImageWrapper = styled.div`
     width: 100%;
+    height: 20rem;
     min-height: 20rem;
     overflow: hidden;
     border-radius: 6px;
