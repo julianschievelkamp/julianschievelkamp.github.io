@@ -14,13 +14,16 @@ export default createGlobalStyle`
         padding: 0;
     }
 
-    .card-wrapper {
+    .App {
         padding: 1rem;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .card-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 1500px;
-        margin: 0 auto;
 
         @media ${queries.lg} {
             flex-direction: row;

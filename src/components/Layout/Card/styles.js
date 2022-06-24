@@ -11,7 +11,7 @@ const fadeIn = keyframes`
 
 export const StyledCard = styled.div`
     width: 100%;
-    max-width: 40rem;
+    max-width: 35rem;
     flex-grow: 1;
     margin: 1rem;
 
