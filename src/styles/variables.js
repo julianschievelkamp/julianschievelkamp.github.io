@@ -1,19 +1,3 @@
-export const lightTheme = {
-    body: "#FFF",
-    text: "#363537",
-    icon: "#000000",
-    background: "#FFF",
-    border: "rgba(0, 0, 0, 0.1)",
-};
-
-export const darkTheme = {
-    body: "#202020",
-    text: "#FAFAFA",
-    icon: "#FFF",
-    background: "#181818",
-    border: "rgba(255, 255, 255, 0.1)",
-};
-
 export const queries = {
     sm: `screen and (min-width: 576px)`,
     md: `screen and (min-width: 768px)`,

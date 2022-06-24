@@ -1,9 +1,14 @@
 import styled, { keyframes } from "styled-components";
 import { softShadow } from "styles/variables";
 
-const fadeIn = keyframes`
+const fadeInDivider = keyframes`
     0% { width: 0; }
     100% { width: 100%; }
+`;
+
+const fadeInHeader = keyframes`
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 `;
 
 export const StyledHeader = styled.div`
@@ -11,6 +16,11 @@ export const StyledHeader = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    animation-name: ${fadeInHeader};
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    opacity: 0;
 `;
 
 export const Divider = styled.div`
@@ -18,7 +28,7 @@ export const Divider = styled.div`
     width: 0;
     margin-top: 1rem;
 
-    animation-name: ${fadeIn};
+    animation-name: ${fadeInDivider};
     animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-delay: 0.3s;

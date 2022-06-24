@@ -11,6 +11,7 @@ const Header = () => {
                     <strong>Projects</strong> // info@julianschievelkamp.com
                 </Paragraph>
             </Flex>
+
             <Divider />
         </StyledHeader>
     );
