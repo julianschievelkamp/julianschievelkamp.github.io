@@ -14,10 +14,20 @@ export default createGlobalStyle`
         padding: 0;
     }
 
+    #root {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
     .App {
         padding: 1rem;
         max-width: 1500px;
-        margin: 0 auto;
+
+        @media ${queries.lg} {
+            padding-top: 0;
+        }
     }
 
     .card-wrapper {
@@ -27,7 +37,7 @@ export default createGlobalStyle`
 
         @media ${queries.lg} {
             flex-direction: row;
-            align-items: flex-start;
+            align-items: stretch;
             justify-content: space-around;
         }
     }

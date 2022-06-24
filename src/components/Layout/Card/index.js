@@ -46,12 +46,18 @@ const Card = ({ item, index }) => {
                         })}
                     </Flex>
                 </Flex>
-                <Paragraph margin="1rem 0">{item.text}</Paragraph>
+                <Flex
+                    flexDirection="column"
+                    justifyContent="space-between"
+                    height="100%"
+                >
+                    <Paragraph margin="1rem 0">{item.text}</Paragraph>
 
-                <Flex flexWrap="wrap">
-                    {item.badges.map((badge) => {
-                        return <Badge key={badge}>{badge}</Badge>;
-                    })}
+                    <Flex flexWrap="wrap">
+                        {item.badges.map((badge) => {
+                            return <Badge key={badge}>{badge}</Badge>;
+                        })}
+                    </Flex>
                 </Flex>
             </Content>
         </StyledCard>

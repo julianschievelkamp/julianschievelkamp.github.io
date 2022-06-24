@@ -19,7 +19,7 @@ export const StyledCard = styled.div`
     animation-name: ${fadeIn};
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: ${(props) => `${props.index * 0.2}s`};
+    animation-delay: ${(props) => `${(props.index + 1) * 0.2}s`};
 `;
 
 export const Content = styled.div`
@@ -60,7 +60,7 @@ export const Headline = styled.button`
 
 export const ImageWrapper = styled.div`
     width: 100%;
-    height: 20rem;
+    min-height: 20rem;
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 1rem;
@@ -87,10 +87,12 @@ export const Badge = styled(Paragraph)`
 
 export const Flex = styled.div`
     display: flex;
+    flex-direction: ${(props) => props.flexDirection};
     flex-wrap: ${(props) => props.flexWrap};
     justify-content: ${(props) => props.justifyContent};
     align-items: ${(props) => props.alignItems};
     margin: ${(props) => props.margin};
+    height: ${(props) => props.height};
 `;
 
 export const Thumb = styled.div`

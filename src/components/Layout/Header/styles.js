@@ -7,9 +7,7 @@ const fadeIn = keyframes`
 `;
 
 export const StyledHeader = styled.div`
-    height: 10rem;
-    padding: 1rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
