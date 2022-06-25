@@ -36,7 +36,7 @@ export default createGlobalStyle`
         max-width: 1500px;
 
         @media ${queries.lg} {
-            padding-top: 0;
+            padding-bottom: 2rem;
         }
     }
 

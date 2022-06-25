@@ -79,11 +79,12 @@ export const Image = styled.div`
 `;
 
 export const Badge = styled(Paragraph)`
-    box-shadow: ${shadow};
+    background: whitesmoke;
     border-radius: ${borderRadius.round};
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
     margin: 0.5rem;
+    margin-left: 0;
 `;
 
 export const Flex = styled.div`

@@ -24,7 +24,7 @@ export const StyledHeader = styled.div`
 `;
 
 export const Divider = styled.div`
-    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.25);
     width: 0;
     margin-top: 1rem;
 
