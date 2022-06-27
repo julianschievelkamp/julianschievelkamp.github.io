@@ -19,7 +19,7 @@ export const StyledCard = styled.div`
     animation-name: ${fadeIn};
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: ${(props) => `${(props.index + 1) * 0.2}s`};
+    animation-delay: ${(props) => `${props.index * 0.2}s`};
 `;
 
 export const Content = styled.div`
@@ -29,6 +29,7 @@ export const Content = styled.div`
     height: 100%;
     box-shadow: ${shadow};
     border-radius: ${borderRadius.edged};
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     transition: 500ms;
 
