@@ -4,8 +4,7 @@ import { queries } from "styles/variables";
 export default createGlobalStyle`
     * {
         box-sizing: border-box;
-        /*font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-family: "Segoe UI", Arial, sans-serif;
         -webkit-tap-highlight-color: transparent;
     }
 
