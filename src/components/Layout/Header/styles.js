@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import { softShadow } from "styles/variables";
 
 const fadeInDivider = keyframes`
     0% { width: 0; }
@@ -24,7 +23,7 @@ export const StyledHeader = styled.div`
 `;
 
 export const Divider = styled.div`
-    border-bottom: 1px solid rgb(0, 0, 0, 0.25);
+    border-bottom: 1px solid lightgrey;
     width: 0;
     margin-top: 1rem;
 
@@ -32,7 +31,6 @@ export const Divider = styled.div`
     animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-delay: 0.3s;
-    box-shadow: ${softShadow};
 `;
 
 export const Flex = styled.div`

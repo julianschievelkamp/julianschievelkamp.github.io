@@ -29,7 +29,7 @@ export const Content = styled.div`
     height: 100%;
     box-shadow: ${shadow};
     border-radius: ${borderRadius.edged};
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid lightgrey;
     padding: 1rem;
     transition: 500ms;
 
@@ -86,6 +86,7 @@ export const Badge = styled(Paragraph)`
     font-size: 0.8rem;
     margin: 0.5rem;
     margin-left: 0;
+    border: 1px solid lightgrey;
 `;
 
 export const Flex = styled.div`
