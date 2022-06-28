@@ -37,12 +37,14 @@ export const Content = styled.div`
         text-decoration: none;
     }
 
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: ${softShadow};
+    @media (hover: hover) {
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: ${softShadow};
 
-        .preview {
-            transform: scale(1.05);
+            .preview {
+                transform: scale(1.05);
+            }
         }
     }
 `;
