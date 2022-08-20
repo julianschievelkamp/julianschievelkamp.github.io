@@ -39,9 +39,9 @@ export const portfolioData = [
     },
     {
         link: "#",
-        previews: [pixieSlide, pixieSlide],
+        previews: [placeholder, placeholder],
         headline: "Pixie Slide",
-        text: "Pixie Slide is an upcoming slide 'n' run puzzle game and will debut on android.",
+        text: "Pixie Slide",
         badges: ["Unity Engine", ".NET (C#)", "Blender"],
     },
 ];
