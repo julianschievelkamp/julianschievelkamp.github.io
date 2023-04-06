@@ -10,7 +10,8 @@ import chartparty4 from "assets/img/chartparty4.png";
 
 import placeholder from "assets/img/placeholder.png";
 
-import pixieSlide from "assets/img/pixieslide.png";
+import pixieslide1 from "assets/img/pixieslide1.png";
+import pixieslide2 from "assets/img/pixieslide2.png";
 
 export const portfolioData = [
     {
@@ -39,11 +40,11 @@ export const portfolioData = [
     {
         link: "https://julianschievelkamp.github.io/ChartParty",
         previewPosition: "top right",
-        previews: [chartparty1, chartparty2, chartparty4],
+        previews: [chartparty1, chartparty2, chartparty3, chartparty4],
         headline: "Chart Party",
         text: (
             <>
-                ChartParty is an experimental UI/UX project allowing to track
+                Chart Party is an experimental UI/UX project allowing to track
                 currency portfolios based on transaction data. Currently in
                 development.
                 <br />
@@ -53,7 +54,7 @@ export const portfolioData = [
                     target="_blank"
                     rel="noreferrer"
                 >
-                    See repository
+                    See repository on github
                 </a>
                 <br />
                 <a
@@ -61,7 +62,7 @@ export const portfolioData = [
                     target="_blank"
                     rel="noreferrer"
                 >
-                    See storybook
+                    See storybook build
                 </a>
                 <br />
                 <a
@@ -69,7 +70,7 @@ export const portfolioData = [
                     target="_blank"
                     rel="noreferrer"
                 >
-                    See demo
+                    See demo build
                 </a>
             </>
         ),
@@ -78,9 +79,9 @@ export const portfolioData = [
     {
         link: "#",
         previewPosition: "center",
-        previews: [placeholder, placeholder],
+        previews: [pixieslide1, pixieslide2],
         headline: "Pixie Slide",
-        text: "Pixie Slide",
-        badges: ["Unity Engine", ".NET (C#)", "Blender"],
+        text: "Pixie Slide is an upcoming slide 'n' run puzzle game for android devices, in which players have to solve complex mechanics in vividly colored matrices.",
+        badges: ["Unity3D Engine", ".NET (C#)", "Blender"],
     },
 ];

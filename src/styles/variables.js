@@ -12,6 +12,6 @@ export const borderRadius = {
 };
 
 export const transition = "300ms ease-out";
-export const shadow = "0 0 10px 0 rgba(0, 0, 0, 0.2)";
-export const softShadow = "0 0 15px 0 rgba(0, 0, 0, 0.1)";
+export const shadow = "0 0 8px 0 rgba(0, 0, 0, 0.2)";
+export const softShadow = "0 0 24px 0 rgba(0, 0, 0, 0.1)";
 export const dropShadow = "4px 4px 5px rgba(0, 0, 0, 0.1)";

@@ -37,14 +37,17 @@ const Card = ({ item, index }) => {
                         flexWrap="wrap"
                         justifyContent="flex-end"
                     >
-                        {item.previews.map((item, index) => {
+                        {item.previews.map((src, index) => {
                             return (
                                 <Thumb
-                                    key={item + index}
+                                    key={src + index}
                                     onClick={() => setPreview(index)}
                                     isActive={preview === index}
                                 >
-                                    <Image src={item} />
+                                    <Image
+                                        src={src}
+                                        previewPosition={item.previewPosition}
+                                    />
                                 </Thumb>
                             );
                         })}
