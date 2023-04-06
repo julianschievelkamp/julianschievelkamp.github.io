@@ -18,7 +18,7 @@ export const StyledCard = styled.div`
     animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-delay: ${(props) => `${props.index * 0.2}s`};
-    max-width: 35rem;
+    max-width: 30rem;
 `;
 
 export const Content = styled.div`
