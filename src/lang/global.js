@@ -3,6 +3,11 @@ import portfolio2 from "assets/img/portfolio2.jpg";
 import portfolio3 from "assets/img/portfolio3.jpg";
 import portfolio4 from "assets/img/portfolio4.jpg";
 
+import chartparty1 from "assets/img/chartparty1.png";
+import chartparty2 from "assets/img/chartparty2.png";
+import chartparty3 from "assets/img/chartparty3.png";
+import chartparty4 from "assets/img/chartparty4.png";
+
 import placeholder from "assets/img/placeholder.png";
 
 import pixieSlide from "assets/img/pixieslide.png";
@@ -10,6 +15,7 @@ import pixieSlide from "assets/img/pixieslide.png";
 export const portfolioData = [
     {
         link: "https://www.julianschievelkamp.com",
+        previewPosition: "center",
         previews: [portfolio1, portfolio2, portfolio3, portfolio4],
         headline: "Artist Portfolio",
         text: (
@@ -31,14 +37,47 @@ export const portfolioData = [
         badges: ["Photography", "Adobe Software", "Unreal Engine"],
     },
     {
-        link: "#",
-        previews: [placeholder, placeholder],
+        link: "https://julianschievelkamp.github.io/ChartParty",
+        previewPosition: "top right",
+        previews: [chartparty1, chartparty2, chartparty4],
         headline: "Chart Party",
-        text: "Chart Party",
-        badges: ["React Native", "Styled Components", "UI / UX"],
+        text: (
+            <>
+                ChartParty is an experimental UI/UX project allowing to track
+                currency portfolios based on transaction data. Currently in
+                development.
+                <br />
+                <br />
+                <a
+                    href="https://julianschievelkamp.github.io/ChartParty"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    See repository
+                </a>
+                <br />
+                <a
+                    href="https://julianschievelkamp.github.io/ChartParty"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    See storybook
+                </a>
+                <br />
+                <a
+                    href="https://julianschievelkamp.github.io/ChartParty"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    See demo
+                </a>
+            </>
+        ),
+        badges: ["React", "TypeScript", "Styled Components"],
     },
     {
         link: "#",
+        previewPosition: "center",
         previews: [placeholder, placeholder],
         headline: "Pixie Slide",
         text: "Pixie Slide",

@@ -21,6 +21,12 @@ export default createGlobalStyle`
                 display: none;
             }
         }
+
+        font-size: 100%;
+
+        @media ${queries.xl} {
+            font-size: 125%;
+        }
     }
 
     #root {
@@ -32,7 +38,7 @@ export default createGlobalStyle`
 
     .App {
         padding: 1rem;
-        max-width: 1500px;
+        /* max-width: 1500px; */
 
         @media ${queries.lg} {
             padding-bottom: 2rem;
@@ -44,7 +50,7 @@ export default createGlobalStyle`
         flex-direction: column;
         align-items: center;
 
-        @media ${queries.lg} {
+        @media ${queries.xxl} {
             flex-direction: row;
             align-items: stretch;
             justify-content: space-around;

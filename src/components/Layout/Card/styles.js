@@ -2,7 +2,13 @@ import styled, { keyframes } from "styled-components";
 
 import Paragraph from "components/Elements/Paragraph";
 
-import { borderRadius, shadow, softShadow, transition } from "styles/variables";
+import {
+    borderRadius,
+    queries,
+    shadow,
+    softShadow,
+    transition,
+} from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
@@ -11,15 +17,14 @@ const fadeIn = keyframes`
 
 export const StyledCard = styled.div`
     width: 100%;
-    max-width: 35rem;
     flex-grow: 1;
     margin: 1rem;
-
     opacity: 0;
     animation-name: ${fadeIn};
     animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-delay: ${(props) => `${props.index * 0.2}s`};
+    max-width: 40rem;
 `;
 
 export const Content = styled.div`
@@ -75,7 +80,7 @@ export const Image = styled.div`
     background: ${(props) => `url(${props.src})`};
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: ${(props) => props.previewPosition};
     width: 100%;
     height: 100%;
     transition: ${transition};

@@ -21,7 +21,11 @@ const Card = ({ item, index }) => {
         <StyledCard index={index}>
             <Content>
                 <ImageWrapper onClick={() => window.open(item.link)}>
-                    <Image src={item.previews[preview]} className="preview" />
+                    <Image
+                        src={item.previews[preview]}
+                        previewPosition={item.previewPosition}
+                        className="preview"
+                    />
                 </ImageWrapper>
                 <Flex justifyContent="space-between">
                     <Headline onClick={() => window.open(item.link)}>
