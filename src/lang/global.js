@@ -8,8 +8,6 @@ import chartparty2 from "assets/img/chartparty2.png";
 import chartparty3 from "assets/img/chartparty3.png";
 import chartparty4 from "assets/img/chartparty4.png";
 
-import placeholder from "assets/img/placeholder.png";
-
 import pixieslide1 from "assets/img/pixieslide1.png";
 import pixieslide2 from "assets/img/pixieslide2.png";
 
@@ -21,9 +19,10 @@ export const portfolioData = [
         headline: "Artist Portfolio",
         text: (
             <>
-                I'm a visual artist who emphasizes on the synergies of classic
-                photography and computer generated imagery (CGI). My skills
-                include analog photography as well as digital art and animation.
+                Besides being a developer, I'm also a visual artist who
+                emphasizes on the synergies of classic photography and computer
+                generated imagery (CGI). My skills include analog photography as
+                well as digital art and animation.
                 <br />
                 <br />
                 <a
@@ -45,8 +44,8 @@ export const portfolioData = [
         text: (
             <>
                 Chart Party is an experimental UI/UX project allowing to track
-                currency portfolios based on transaction data. Currently in
-                development.
+                currency portfolios based on transaction data. Further
+                components are in development and will be added over time.
                 <br />
                 <br />
                 <a
