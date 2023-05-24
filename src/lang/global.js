@@ -76,7 +76,6 @@ export const portfolioData = [
         badges: ["React", "TypeScript", "Styled Components"],
     },
     {
-        link: "#",
         previewPosition: "center",
         previews: [pixieslide1, pixieslide2],
         headline: "Pixie Slide",
