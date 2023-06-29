@@ -8,7 +8,7 @@ const Header = () => {
         <StyledHeader>
             <Flex>
                 <Paragraph>
-                    <strong>Projects</strong> // info@julianschievelkamp.com
+                    <strong>Projects</strong> // mail@julianschievelkamp.com
                 </Paragraph>
             </Flex>
 
