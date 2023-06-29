@@ -11,7 +11,7 @@ const fadeInHeader = keyframes`
 `;
 
 export const StyledHeader = styled.div`
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
