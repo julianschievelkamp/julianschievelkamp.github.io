@@ -81,7 +81,7 @@ export const Image = styled.div`
     background-position: ${(props) => props.previewPosition};
     width: 100%;
     height: 100%;
-    transition: ${transition};
+    transition: transform ${transition};
 `;
 
 export const Badge = styled(Paragraph)`
