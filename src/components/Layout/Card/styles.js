@@ -12,12 +12,13 @@ const fadeIn = keyframes`
 export const StyledCard = styled.div`
     width: 100%;
     flex-grow: 1;
-    margin: 1rem;
+    margin: 1rem 0;
     opacity: 0;
     animation-name: ${fadeIn};
     animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-delay: ${(props) => `${props.index * 0.2}s`};
+    min-width: 30%;
     max-width: 30rem;
 `;
 
@@ -60,7 +61,8 @@ export const Headline = styled.button`
     cursor: pointer;
 `;
 
-export const ImageWrapper = styled.div`
+export const FocusWrapper = styled.div`
+    position: relative;
     width: 100%;
     height: 20rem;
     min-height: 20rem;
@@ -68,6 +70,8 @@ export const ImageWrapper = styled.div`
     border-radius: 6px;
     margin-bottom: 1rem;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 `;
 
 export const Image = styled.div`

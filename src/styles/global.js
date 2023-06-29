@@ -38,7 +38,6 @@ export default createGlobalStyle`
 
     .App {
         padding: 1rem;
-        /* max-width: 1500px; */
 
         @media ${queries.lg} {
             padding-bottom: 2rem;
@@ -46,14 +45,12 @@ export default createGlobalStyle`
     }
 
     .card-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2rem;
 
         @media ${queries.xxl} {
-            flex-direction: row;
-            align-items: stretch;
-            justify-content: space-around;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 `;
