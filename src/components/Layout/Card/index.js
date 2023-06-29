@@ -23,7 +23,7 @@ const Card = ({ item, index }) => {
       <Content>
         <FocusWrapper onClick={() => item.link && window.open(item.link)}>
           {item.videos && item.videos[preview] ? (
-            <Video id={index} src={item.videos[preview]} className="preview" />
+            <Video id={index} src={item.videos[preview]} poster={item.previews[preview]} className="preview" />
           ) : (
             <Image
               src={item.previews[preview]}

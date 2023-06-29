@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { StyledVideo } from "./styles";
 import { useEffect, useRef } from "react";
 
-const Video = ({ src, className }) => {
+const Video = ({ src, poster, className }) => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const Video = ({ src, className }) => {
   }, []);
 
   return (
-    <StyledVideo ref={ref} className={className} muted loop>
+    <StyledVideo ref={ref} poster={poster} className={className} muted loop>
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
     </StyledVideo>
