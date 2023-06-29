@@ -85,6 +85,6 @@ export const portfolioData = [
     videos: [pixieslide],
     headline: "Pixie Slide",
     text: "Pixie Slide is an upcoming slide 'n' run puzzle game for android devices, in which players have to solve complex mechanics in vividly colored matrices.",
-    badges: ["Unity3D Engine", ".NET (C#)", "Blender"],
+    badges: ["Unity Engine", ".NET (C#)", "Blender"],
   },
 ];
