@@ -57,15 +57,15 @@ export const portfolioData = [
           target="_blank"
           rel="noreferrer"
         >
-          See storybook build
+          See demo build
         </a>
-        <br />
+        <br/>
         <a
-          href="https://julianschievelkamp.github.io/ChartParty"
+          href="https://julianschievelkamp.github.io/ChartParty/storybook-static"
           target="_blank"
           rel="noreferrer"
         >
-          See demo build
+          See storybook build
         </a>
       </>
     ),
