@@ -21,7 +21,7 @@ const Card = ({ item, index }) => {
   return (
     <StyledCard index={index}>
       <Content>
-        <FocusWrapper onClick={() => item.link && window.open(item.link)}>
+        <FocusWrapper onClick={() => item.link && window.open(item.link)} link={item.link}>
           {item.videos && item.videos[preview] ? (
             <Video id={index} src={item.videos[preview]} poster={item.previews[preview]} className="preview" />
           ) : (

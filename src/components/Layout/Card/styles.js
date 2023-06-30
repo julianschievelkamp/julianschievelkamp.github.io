@@ -69,7 +69,7 @@ export const FocusWrapper = styled.div`
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 1rem;
-    cursor: pointer;
+    cursor: ${(props) => props.link && "pointer"};
     display: flex;
     justify-content: center;
 `;
