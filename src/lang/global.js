@@ -53,14 +53,6 @@ export const portfolioData = [
         <br />
         <br />
         <a
-          href="https://github.com/julianschievelkamp/ChartParty"
-          target="_blank"
-          rel="noreferrer"
-        >
-          See repository on github
-        </a>
-        <br />
-        <a
           href="https://julianschievelkamp.github.io/ChartParty"
           target="_blank"
           rel="noreferrer"
