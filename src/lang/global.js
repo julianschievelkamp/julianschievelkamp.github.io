@@ -8,7 +8,7 @@ import chartparty2 from "assets/img/chartparty2.png";
 import chartparty3 from "assets/img/chartparty3.png";
 import chartparty4 from "assets/img/chartparty4.png";
 
-import pixieslide1 from "assets/img/pixieslide1.png";
+import pixieslide1 from "assets/img/pixieslide1.jpg";
 import pixieslide2 from "assets/img/pixieslide2.png";
 
 import pixieslide from "assets/video/pixieslide.mp4";
