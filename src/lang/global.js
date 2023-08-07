@@ -23,10 +23,9 @@ export const portfolioData = [
     headline: "Artist Portfolio",
     text: (
       <>
-        Besides being a developer, I'm also a visual artist who emphasizes on
-        the synergies of classic photography and computer generated imagery
-        (CGI). My skills include analog photography as well as digital art and
-        animation.
+        In addition to my expertise in coding, I also like to push my creative
+        boundaries as an artist by using experimental software and cutting-edge
+        technologies.
         <br />
         <br />
         <a
@@ -59,7 +58,7 @@ export const portfolioData = [
         >
           See demo build
         </a>
-        <br/>
+        <br />
         <a
           href="https://julianschievelkamp.github.io/ChartParty/storybook-static"
           target="_blank"
