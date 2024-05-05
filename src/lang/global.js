@@ -3,10 +3,8 @@ import portfolio2 from "assets/img/portfolio2.jpg";
 import portfolio3 from "assets/img/portfolio3.jpg";
 import portfolio4 from "assets/img/portfolio4.jpg";
 
-import chartparty1 from "assets/img/chartparty1.png";
-import chartparty2 from "assets/img/chartparty2.png";
-import chartparty3 from "assets/img/chartparty3.png";
-import chartparty4 from "assets/img/chartparty4.png";
+import blockboard1 from "assets/img/block-board1.png";
+import blockboard2 from "assets/img/block-board2.png";
 
 import pixieslide1 from "assets/img/pixieslide1.jpg";
 import pixieslide2 from "assets/img/pixieslide2.png";
@@ -42,12 +40,12 @@ export const portfolioData = [
     {
         link: "https://julianschievelkamp.github.io/block-board",
         previewPosition: "top right",
-        previews: [chartparty1, chartparty2, chartparty3, chartparty4],
+        previews: [blockboard1, blockboard2],
         headline: "Block Board",
         text: (
             <>
                 Block Board displays current crypto currency market data in real
-                time, making use of several market APIs. More widgets are in
+                time and uses several crypto market APIs. New widgets are in
                 development and will be added over time.
                 <br />
                 <br />

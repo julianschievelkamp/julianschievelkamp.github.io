@@ -49,6 +49,10 @@ export default createGlobalStyle`
         grid-template-columns: 1fr;
         grid-column-gap: 2rem;
 
+        @media ${queries.lg} {
+            grid-template-columns: 1fr 1fr ;
+        }
+
         @media ${queries.xxl} {
             grid-template-columns: 1fr 1fr 1fr;
         }
