@@ -11,6 +11,7 @@ export default createGlobalStyle`
     html, body {
         margin: 0;
         padding: 0;
+        font-size: 100%;
 
         // scroll fix for card fade in
         @media ${queries.lg} {
@@ -22,10 +23,9 @@ export default createGlobalStyle`
             }
         }
 
-        font-size: 100%;
 
         @media ${queries.xl} {
-            font-size: 125%;
+            // font-size: 125%;
         }
     }
 
