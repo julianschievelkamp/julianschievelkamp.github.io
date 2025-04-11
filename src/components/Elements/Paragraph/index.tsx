@@ -1,9 +1,8 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 import { StyledParagraph } from "./styles";
 
-const Paragraph = (props) => {
+const Paragraph = (props: any) => {
     return <StyledParagraph {...props}>{props.children}</StyledParagraph>;
 };
 
