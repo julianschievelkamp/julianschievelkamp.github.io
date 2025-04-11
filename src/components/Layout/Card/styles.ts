@@ -9,7 +9,7 @@ const fadeIn = keyframes`
     100% { opacity: 1;  transform: translateY(0);}
 `;
 
-export const StyledCard = styled.div`
+export const StyledCard = styled.div<{ index: number }>`
     width: 100%;
     flex-grow: 1;
     margin: 1rem 0;
@@ -61,7 +61,7 @@ export const Headline = styled.button`
     cursor: pointer;
 `;
 
-export const FocusWrapper = styled.div`
+export const FocusWrapper = styled.div<{ link?: string }>`
     position: relative;
     width: 100%;
     height: 20rem;
@@ -74,7 +74,7 @@ export const FocusWrapper = styled.div`
     justify-content: center;
 `;
 
-export const Image = styled.div`
+export const Image = styled.div<{ src: string; previewPosition: string }>`
     background: ${(props) => `url(${props.src})`};
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +94,14 @@ export const Badge = styled(Paragraph)`
     border: 1px solid lightgrey;
 `;
 
-export const Flex = styled.div`
+export const Flex = styled.div<{
+    flexDirection?: string;
+    flexWrap?: string;
+    justifyContent?: string;
+    alignItems?: string;
+    margin?: string;
+    height?: string;
+}>`
     display: flex;
     flex-direction: ${(props) => props.flexDirection};
     flex-wrap: ${(props) => props.flexWrap};
@@ -104,7 +111,7 @@ export const Flex = styled.div`
     height: ${(props) => props.height};
 `;
 
-export const Thumb = styled.div`
+export const Thumb = styled.div<{ isActive: boolean }>`
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;

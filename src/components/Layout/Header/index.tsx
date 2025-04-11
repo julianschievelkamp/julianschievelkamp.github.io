@@ -1,5 +1,4 @@
 import Paragraph from "components/Elements/Paragraph";
-import React from "react";
 
 import { StyledHeader, Divider, Flex } from "./styles";
 
@@ -16,9 +15,5 @@ const Header = () => {
         </StyledHeader>
     );
 };
-
-Header.propTypes = {};
-
-Header.defaultProps = {};
 
 export default Header;

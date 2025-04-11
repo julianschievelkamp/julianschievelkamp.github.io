@@ -12,7 +12,17 @@ import pixieslide2 from "assets/img/pixieslide2.png";
 import pixieslide from "assets/video/pixieslide.mp4";
 import andromeda from "assets/video/andromeda.mp4";
 
-export const portfolioData = [
+export type PortfolioItem = {
+    link?: string;
+    previewPosition: string;
+    previews: string[];
+    videos?: string[];
+    headline: string;
+    text: React.ReactNode;
+    badges: string[];
+};
+
+export const portfolioData: PortfolioItem[] = [
     {
         link: "https://www.julianschievelkamp.com",
         previewPosition: "center",

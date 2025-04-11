@@ -1,10 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import { queries } from "styles/variables";
+import fonts from "./fonts";
 
 export default createGlobalStyle`
+    ${fonts};
+
     * {
         box-sizing: border-box;
-        font-family: "Segoe UI", Arial, sans-serif;
+        font-family: "Poppins", sans-serif;
         -webkit-tap-highlight-color: transparent;
     }
 
@@ -21,11 +24,6 @@ export default createGlobalStyle`
             &::-webkit-scrollbar {
                 display: none;
             }
-        }
-
-
-        @media ${queries.xl} {
-            // font-size: 125%;
         }
     }
 
@@ -50,7 +48,7 @@ export default createGlobalStyle`
         grid-column-gap: 2rem;
 
         @media ${queries.lg} {
-            grid-template-columns: 1fr 1fr ;
+            grid-template-columns: 1fr 1fr;
         }
 
         @media ${queries.xxl} {
