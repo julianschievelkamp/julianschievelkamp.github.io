@@ -9,7 +9,7 @@ const fadeIn = keyframes`
     100% { opacity: 1;  transform: translateY(0);}
 `;
 
-export const StyledCard = styled.div<{ index: number }>`
+export const StyledCard = styled.div<{ $index: number }>`
     width: 100%;
     flex-grow: 1;
     margin: 1rem 0;
@@ -17,7 +17,7 @@ export const StyledCard = styled.div<{ index: number }>`
     animation-name: ${fadeIn};
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: ${(props) => `${props.index * 0.2}s`};
+    animation-delay: ${(props) => `${props.$index * 0.2}s`};
     min-width: 30%;
     max-width: 30rem;
 `;
@@ -34,7 +34,11 @@ export const Content = styled.div`
     transition: 500ms;
 
     a {
-        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: #ffca00;
+        }
     }
 
     @media (hover: hover) {
@@ -59,9 +63,10 @@ export const Headline = styled.button`
     font-size: 1rem;
     line-height: 1.5;
     cursor: pointer;
+    color: black;
 `;
 
-export const FocusWrapper = styled.div<{ link?: string }>`
+export const FocusWrapper = styled.div<{ $link?: string }>`
     position: relative;
     width: 100%;
     height: 20rem;
@@ -69,16 +74,16 @@ export const FocusWrapper = styled.div<{ link?: string }>`
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 1rem;
-    cursor: ${(props) => props.link && "pointer"};
+    cursor: ${(props) => props.$link && "pointer"};
     display: flex;
     justify-content: center;
 `;
 
-export const Image = styled.div<{ src: string; previewPosition: string }>`
+export const Image = styled.div<{ src: string; $previewPosition: string }>`
     background: ${(props) => `url(${props.src})`};
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: ${(props) => props.previewPosition};
+    background-position: ${(props) => props.$previewPosition};
     width: 100%;
     height: 100%;
     transition: transform ${transition};
@@ -95,29 +100,29 @@ export const Badge = styled(Paragraph)`
 `;
 
 export const Flex = styled.div<{
-    flexDirection?: string;
-    flexWrap?: string;
-    justifyContent?: string;
-    alignItems?: string;
-    margin?: string;
+    $flexDirection?: string;
+    $flexWrap?: string;
+    $justifyContent?: string;
+    $alignItems?: string;
+    $margin?: string;
     height?: string;
 }>`
     display: flex;
-    flex-direction: ${(props) => props.flexDirection};
-    flex-wrap: ${(props) => props.flexWrap};
-    justify-content: ${(props) => props.justifyContent};
-    align-items: ${(props) => props.alignItems};
-    margin: ${(props) => props.margin};
+    flex-direction: ${(props) => props.$flexDirection};
+    flex-wrap: ${(props) => props.$flexWrap};
+    justify-content: ${(props) => props.$justifyContent};
+    align-items: ${(props) => props.$alignItems};
+    margin: ${(props) => props.$margin};
     height: ${(props) => props.height};
 `;
 
-export const Thumb = styled.div<{ isActive: boolean }>`
+export const Thumb = styled.div<{ $isActive: boolean }>`
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
     overflow: hidden;
     transition: ${transition};
-    background: ${(props) => (props.isActive ? "#ffca00" : "transparent")};
+    background: ${(props) => (props.$isActive ? "#ffca00" : "transparent")};
     padding: 3px;
     margin-left: 2px;
     border-radius: 3px;

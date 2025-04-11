@@ -25,8 +25,6 @@ export const StyledHeader = styled.div`
 export const Divider = styled.div`
     border-bottom: 1px solid lightgrey;
     width: 0;
-    margin-top: 1rem;
-
     animation-name: ${fadeInDivider};
     animation-fill-mode: forwards;
     animation-duration: 1s;

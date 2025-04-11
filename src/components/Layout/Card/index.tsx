@@ -20,11 +20,11 @@ const Card = ({ item, index }: { item: PortfolioItem; index: number }) => {
     const [preview, setPreview] = useState(0);
 
     return (
-        <StyledCard index={index}>
+        <StyledCard $index={index}>
             <Content>
                 <FocusWrapper
                     onClick={() => item.link && window.open(item.link)}
-                    link={item.link}
+                    $link={item.link}
                 >
                     {item.videos && item.videos[preview] ? (
                         <Video
@@ -36,12 +36,12 @@ const Card = ({ item, index }: { item: PortfolioItem; index: number }) => {
                     ) : (
                         <Image
                             src={item.previews[preview]}
-                            previewPosition={item.previewPosition}
+                            $previewPosition={item.previewPosition}
                             className="preview"
                         />
                     )}
                 </FocusWrapper>
-                <Flex justifyContent="space-between">
+                <Flex $justifyContent="space-between">
                     <Headline
                         onClick={() => item.link && window.open(item.link)}
                     >
@@ -49,20 +49,20 @@ const Card = ({ item, index }: { item: PortfolioItem; index: number }) => {
                     </Headline>
 
                     <Flex
-                        margin="0 0 0 0.5rem"
-                        flexWrap="wrap"
-                        justifyContent="flex-end"
+                        $margin="0 0 0 0.5rem"
+                        $flexWrap="wrap"
+                        $justifyContent="flex-end"
                     >
                         {item.previews.map((src, index) => {
                             return (
                                 <Thumb
                                     key={src + index}
                                     onClick={() => setPreview(index)}
-                                    isActive={preview === index}
+                                    $isActive={preview === index}
                                 >
                                     <Image
                                         src={src}
-                                        previewPosition={item.previewPosition}
+                                        $previewPosition={item.previewPosition}
                                     />
                                 </Thumb>
                             );
@@ -70,13 +70,13 @@ const Card = ({ item, index }: { item: PortfolioItem; index: number }) => {
                     </Flex>
                 </Flex>
                 <Flex
-                    flexDirection="column"
-                    justifyContent="space-between"
+                    $flexDirection="column"
+                    $justifyContent="space-between"
                     height="100%"
                 >
-                    <Paragraph margin="1rem 0">{item.text}</Paragraph>
+                    <Paragraph $margin="1rem 0">{item.text}</Paragraph>
 
-                    <Flex flexWrap="wrap">
+                    <Flex $flexWrap="wrap">
                         {item.badges.map((badge) => {
                             return <Badge key={badge}>{badge}</Badge>;
                         })}

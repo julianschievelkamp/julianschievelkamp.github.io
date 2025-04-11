@@ -10,12 +10,12 @@ Paragraph.propTypes = {
     children: PropTypes.any.isRequired,
     textAlign: PropTypes.string,
     bold: PropTypes.bool,
-    margin: PropTypes.string,
+    $margin: PropTypes.string,
 };
 
 Paragraph.defaultProps = {
     children: "Hello World!",
-    margin: "0",
+    $margin: "0",
 };
 
 export default Paragraph;
