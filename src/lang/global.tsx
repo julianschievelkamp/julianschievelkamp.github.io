@@ -41,7 +41,15 @@ export const portfolioData: PortfolioItem[] = [
                     target="_blank"
                     rel="noreferrer"
                 >
-                    www.julianschievelkamp.com
+                    Portfolio
+                </a>
+                <br />
+                <a
+                    href="https://github.com/julianschievelkamp/portfolio"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Repository
                 </a>
             </>
         ),

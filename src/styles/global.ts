@@ -55,4 +55,12 @@ export default createGlobalStyle`
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
+
+    a {
+        color: black;
+    
+        &:hover {
+            color: #ffca00;
+        }
+    }
 `;

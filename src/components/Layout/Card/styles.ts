@@ -33,14 +33,6 @@ export const Content = styled.div`
     padding: 1rem;
     transition: 500ms;
 
-    a {
-        color: black;
-
-        &:hover {
-            color: #ffca00;
-        }
-    }
-
     @media (hover: hover) {
         &:hover {
             transform: translateY(-8px);

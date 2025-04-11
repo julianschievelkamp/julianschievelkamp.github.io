@@ -7,7 +7,10 @@ const Header = () => {
         <StyledHeader>
             <Flex>
                 <Paragraph>
-                    <strong>Projects</strong> // mail@julianschievelkamp.com
+                    <strong>Projects</strong> //{" "}
+                    <a href="mailto:mail@julianschievelkamp.com">
+                        mail@julianschievelkamp.com
+                    </a>
                 </Paragraph>
             </Flex>
 
