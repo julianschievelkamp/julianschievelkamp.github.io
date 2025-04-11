@@ -52,8 +52,8 @@ Error generating stack: `+e.message+`
     font-weight: ${i=>i.bold?"bold":"normal"};
     line-height: 1.5;
     font-size: 0.875rem;
-    margin: ${i=>i.margin};
-`,Pu=i=>F.jsx(am,{...i,children:i.children});Pu.propTypes={children:Fe.any.isRequired,textAlign:Fe.string,bold:Fe.bool,margin:Fe.string};Pu.defaultProps={children:"Hello World!",margin:"0"};const mi={lg:"screen and (min-width: 992px)",xxl:"screen and (min-width: 1400px)"},Sh={round:"100px",edged:"10px"},zr="300ms ease-out",um="0 0 8px 0 rgba(0, 0, 0, 0.2)",nm="0 0 24px 0 rgba(0, 0, 0, 0.1)",im=_r`
+    margin: ${i=>i.$margin};
+`,Pu=i=>F.jsx(am,{...i,children:i.children});Pu.propTypes={children:Fe.any.isRequired,textAlign:Fe.string,bold:Fe.bool,$margin:Fe.string};Pu.defaultProps={children:"Hello World!",$margin:"0"};const mi={lg:"screen and (min-width: 992px)",xxl:"screen and (min-width: 1400px)"},Sh={round:"100px",edged:"10px"},zr="300ms ease-out",um="0 0 8px 0 rgba(0, 0, 0, 0.2)",nm="0 0 24px 0 rgba(0, 0, 0, 0.1)",im=_r`
     0% { opacity: 0; transform: translateY(10rem); }
     100% { opacity: 1;  transform: translateY(0);}
 `,cm=nl.div`
@@ -64,7 +64,7 @@ Error generating stack: `+e.message+`
     animation-name: ${im};
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: ${i=>`${i.index*.2}s`};
+    animation-delay: ${i=>`${i.$index*.2}s`};
     min-width: 30%;
     max-width: 30rem;
 `,fm=nl.div`
@@ -79,7 +79,11 @@ Error generating stack: `+e.message+`
     transition: 500ms;
 
     a {
-        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: #ffca00;
+        }
     }
 
     @media (hover: hover) {
@@ -102,6 +106,7 @@ Error generating stack: `+e.message+`
     font-size: 1rem;
     line-height: 1.5;
     cursor: pointer;
+    color: black;
 `,sm=nl.div`
     position: relative;
     width: 100%;
@@ -110,14 +115,14 @@ Error generating stack: `+e.message+`
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 1rem;
-    cursor: ${i=>i.link&&"pointer"};
+    cursor: ${i=>i.$link&&"pointer"};
     display: flex;
     justify-content: center;
 `,K0=nl.div`
     background: ${i=>`url(${i.src})`};
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: ${i=>i.previewPosition};
+    background-position: ${i=>i.$previewPosition};
     width: 100%;
     height: 100%;
     transition: transform ${zr};
@@ -131,11 +136,11 @@ Error generating stack: `+e.message+`
     border: 1px solid lightgrey;
 `,gi=nl.div`
     display: flex;
-    flex-direction: ${i=>i.flexDirection};
-    flex-wrap: ${i=>i.flexWrap};
-    justify-content: ${i=>i.justifyContent};
-    align-items: ${i=>i.alignItems};
-    margin: ${i=>i.margin};
+    flex-direction: ${i=>i.$flexDirection};
+    flex-wrap: ${i=>i.$flexWrap};
+    justify-content: ${i=>i.$justifyContent};
+    align-items: ${i=>i.$alignItems};
+    margin: ${i=>i.$margin};
     height: ${i=>i.height};
 `,dm=nl.div`
     width: 2.5rem;
@@ -143,7 +148,7 @@ Error generating stack: `+e.message+`
     cursor: pointer;
     overflow: hidden;
     transition: ${zr};
-    background: ${i=>i.isActive?"#ffca00":"transparent"};
+    background: ${i=>i.$isActive?"#ffca00":"transparent"};
     padding: 3px;
     margin-left: 2px;
     border-radius: 3px;
@@ -156,7 +161,7 @@ Error generating stack: `+e.message+`
   width: 100%;
   height: 100%;
   transition: ${zr};
-`,bh=({id:i,src:s,poster:o,className:r})=>{const v=ta.useRef(null);return ta.useEffect(()=>{var E;(E=v==null?void 0:v.current)==null||E.play()},[]),F.jsxs(hm,{ref:v,poster:o,className:r,id:i,muted:!0,loop:!0,children:[F.jsx("source",{src:s,type:"video/mp4"}),"Your browser does not support the video tag."]})};bh.propTypes={src:Fe.string.isRequired,className:Fe.string};const Or=({item:i,index:s})=>{const[o,r]=ta.useState(0);return F.jsx(cm,{index:s,children:F.jsxs(fm,{children:[F.jsx(sm,{onClick:()=>i.link&&window.open(i.link),link:i.link,children:i.videos&&i.videos[o]?F.jsx(bh,{id:s.toString(),src:i.videos[o],poster:i.previews[o],className:"preview"}):F.jsx(K0,{src:i.previews[o],previewPosition:i.previewPosition,className:"preview"})}),F.jsxs(gi,{justifyContent:"space-between",children:[F.jsx(rm,{onClick:()=>i.link&&window.open(i.link),children:i.headline}),F.jsx(gi,{margin:"0 0 0 0.5rem",flexWrap:"wrap",justifyContent:"flex-end",children:i.previews.map((v,E)=>F.jsx(dm,{onClick:()=>r(E),isActive:o===E,children:F.jsx(K0,{src:v,previewPosition:i.previewPosition})},v+E))})]}),F.jsxs(gi,{flexDirection:"column",justifyContent:"space-between",height:"100%",children:[F.jsx(Pu,{margin:"1rem 0",children:i.text}),F.jsx(gi,{flexWrap:"wrap",children:i.badges.map(v=>F.jsx(om,{children:v},v))})]})]})})};Or.propTypes={item:Fe.object};Or.defaultProps={};const ym="/assets/Poppins-Light-DT6-CsId.ttf",vm="/assets/Poppins-Bold-qTAUjFF7.ttf",mm=qi`
+`,bh=({id:i,src:s,poster:o,className:r})=>{const v=ta.useRef(null);return ta.useEffect(()=>{var E;(E=v==null?void 0:v.current)==null||E.play()},[]),F.jsxs(hm,{ref:v,poster:o,className:r,id:i,muted:!0,loop:!0,children:[F.jsx("source",{src:s,type:"video/mp4"}),"Your browser does not support the video tag."]})};bh.propTypes={src:Fe.string.isRequired,className:Fe.string};const Or=({item:i,index:s})=>{const[o,r]=ta.useState(0);return F.jsx(cm,{$index:s,children:F.jsxs(fm,{children:[F.jsx(sm,{onClick:()=>i.link&&window.open(i.link),$link:i.link,children:i.videos&&i.videos[o]?F.jsx(bh,{id:s.toString(),src:i.videos[o],poster:i.previews[o],className:"preview"}):F.jsx(K0,{src:i.previews[o],$previewPosition:i.previewPosition,className:"preview"})}),F.jsxs(gi,{$justifyContent:"space-between",children:[F.jsx(rm,{onClick:()=>i.link&&window.open(i.link),children:i.headline}),F.jsx(gi,{$margin:"0 0 0 0.5rem",$flexWrap:"wrap",$justifyContent:"flex-end",children:i.previews.map((v,E)=>F.jsx(dm,{onClick:()=>r(E),$isActive:o===E,children:F.jsx(K0,{src:v,$previewPosition:i.previewPosition})},v+E))})]}),F.jsxs(gi,{$flexDirection:"column",$justifyContent:"space-between",height:"100%",children:[F.jsx(Pu,{$margin:"1rem 0",children:i.text}),F.jsx(gi,{$flexWrap:"wrap",children:i.badges.map(v=>F.jsx(om,{children:v},v))})]})]})})};Or.propTypes={item:Fe.object};Or.defaultProps={};const ym="/assets/Poppins-Light-DT6-CsId.ttf",vm="/assets/Poppins-Bold-qTAUjFF7.ttf",mm=qi`
     @font-face {
         font-family: "Poppins";
         font-style: normal;
@@ -241,8 +246,6 @@ Error generating stack: `+e.message+`
 `,Nm=nl.div`
     border-bottom: 1px solid lightgrey;
     width: 0;
-    margin-top: 1rem;
-
     animation-name: ${Mm};
     animation-fill-mode: forwards;
     animation-duration: 1s;
