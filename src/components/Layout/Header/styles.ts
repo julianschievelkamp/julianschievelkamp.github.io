@@ -11,10 +11,10 @@ const fadeInHeader = keyframes`
 `;
 
 export const StyledHeader = styled.div`
-    padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: 1rem;
 
     animation-name: ${fadeInHeader};
     animation-fill-mode: forwards;

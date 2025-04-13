@@ -28,6 +28,9 @@ const Video = ({
             id={id}
             muted
             loop
+            playsInline
+            disablePictureInPicture
+            onContextMenu={(e) => e.preventDefault()}
         >
             <source src={src} type="video/mp4" />
             Your browser does not support the video tag.

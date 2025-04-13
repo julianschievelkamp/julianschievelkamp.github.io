@@ -15,6 +15,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         font-size: 100%;
+        background-color: whitesmoke;
 
         // scroll fix for card fade in
         @media ${queries.lg} {
@@ -38,17 +39,23 @@ export default createGlobalStyle`
         padding: 1rem;
 
         @media ${queries.lg} {
-            padding-bottom: 2rem;
+            padding: 2rem;
+        }
+
+        @media ${queries.xxl} {
+            padding-bottom: 4rem;
         }
     }
 
     .card-wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        grid-column-gap: 2rem;
+        grid-gap: 1rem;
+        padding-top: 1rem;
 
         @media ${queries.lg} {
             grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
         }
 
         @media ${queries.xxl} {
