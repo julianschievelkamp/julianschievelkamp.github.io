@@ -2,46 +2,26 @@ import Text from "elements/components/Text/Text";
 import type { CSSProperties } from "react";
 import styled, { keyframes } from "styled-components";
 
-import { borderRadius, shadow, transition } from "styles/variables";
+import { borderRadius, transition } from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
     100% { opacity: 1;  transform: translateY(0);}
 `;
 
-export const StyledCard = styled.div<{ $index: number }>`
+export const StyledCard = styled.li<{ $index: number }>`
     width: 100%;
-    flex-grow: 1;
     opacity: 0;
     animation-name: ${fadeIn};
     animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-delay: ${(props) => `${props.$index * 0.2}s`};
-    min-width: 30%;
-    max-width: 30rem;
-`;
 
-export const Content = styled.div`
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
     border-radius: ${borderRadius.edged};
     border: 1px solid lightgrey;
     padding: 1rem;
-    transition: 500ms;
     background-color: white;
-
-    @media (hover: hover) {
-        &:hover {
-            transform: translateY(-8px);
-            box-shadow: ${shadow};
-
-            .preview {
-                transform: scale(1.05);
-            }
-        }
-    }
 `;
 
 export const Headline = styled.button`
@@ -72,12 +52,10 @@ export const FocusWrapper = styled.div<{ $link?: string }>`
 
 export const Image = styled.div<{
     $src: string;
-    $previewPosition: CSSProperties["backgroundPosition"];
 }>`
     background: ${(props) => `url(${props.$src})`};
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: ${(props) => props.$previewPosition};
     width: 100%;
     height: 100%;
     transition: transform ${transition};
