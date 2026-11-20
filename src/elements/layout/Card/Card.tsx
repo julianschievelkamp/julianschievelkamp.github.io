@@ -11,7 +11,7 @@ import {
     Content,
 } from "./Card.styles";
 
-import { PortfolioItem } from "data/global";
+import { PortfolioItem } from "data/portfolioData";
 import Text from "elements/components/Text/Text";
 
 const Card = ({ item, index }: { item: PortfolioItem; index: number }) => {

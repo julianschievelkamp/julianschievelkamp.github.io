@@ -1,6 +1,6 @@
 import Card from "elements/layout/Card/Card";
 import GlobalStyle from "styles/global";
-import { portfolioData } from "data/global";
+import { portfolioData } from "data/portfolioData";
 import Header from "elements/layout/Header/Header";
 import { CardWrapper, Main } from "./App.styles";
 
