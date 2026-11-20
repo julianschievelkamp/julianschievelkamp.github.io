@@ -7,7 +7,6 @@ export default createGlobalStyle`
 
     * {
         box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
         -webkit-tap-highlight-color: transparent;
     }
 
@@ -15,7 +14,8 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         font-size: 100%;
-        background-color: whitesmoke;
+        position: relative;
+        overflow-x: clip;
 
         // scroll fix for card fade in
         @media ${queries.lg} {
@@ -28,39 +28,16 @@ export default createGlobalStyle`
         }
     }
 
+    body {
+        overflow-y: scroll;
+        background-color: whitesmoke;
+    }
+
     #root {
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
-    }
-
-    .App {
-        padding: 1rem;
-
-        @media ${queries.lg} {
-            padding: 2rem;
-        }
-
-        @media ${queries.xxl} {
-            padding-bottom: 4rem;
-        }
-    }
-
-    .card-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
-        padding-top: 1rem;
-
-        @media ${queries.lg} {
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 2rem;
-        }
-
-        @media ${queries.xxl} {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+        min-height: 100svh;
     }
 
     a {

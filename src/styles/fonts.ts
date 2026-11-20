@@ -8,6 +8,7 @@ export default css`
         font-family: "Poppins";
         font-style: normal;
         src: url(${PoppinsLight}) format("woff2");
+        font-display: swap;
     }
 
     @font-face {
@@ -15,5 +16,6 @@ export default css`
         font-style: normal;
         font-weight: bold;
         src: url(${PoppinsBold}) format("woff2");
+        font-display: swap;
     }
 `;
