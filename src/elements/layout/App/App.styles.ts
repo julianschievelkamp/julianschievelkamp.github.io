@@ -11,6 +11,14 @@ export const Main = styled.main`
     @media ${queries.xxl} {
         padding-bottom: 4rem;
     }
+
+    a {
+        color: black;
+
+        &:hover {
+            color: #ffca00;
+        }
+    }
 `;
 
 export const CardWrapper = styled.div`
