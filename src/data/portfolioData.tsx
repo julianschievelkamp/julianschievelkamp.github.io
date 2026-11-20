@@ -1,16 +1,18 @@
+import type { CSSProperties, ReactNode } from "react";
+
 import DadaYaga from "assets/img/dada_yaga.jpg";
 import Andromeda from "assets/img/andromeda.jpg";
 import Versus1 from "assets/img/versus_1.jpg";
 import Viscosity from "assets/img/viscosity.jpg";
 
-export type PortfolioItem = {
+export interface PortfolioItem {
     link?: string;
-    previewPosition: string;
+    previewPosition: CSSProperties["backgroundPosition"];
     previews: string[];
     headline: string;
-    text: React.ReactNode;
+    text: ReactNode;
     badges: string[];
-};
+}
 
 export const portfolioData: PortfolioItem[] = [
     {

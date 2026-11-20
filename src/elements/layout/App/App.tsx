@@ -4,28 +4,20 @@ import { portfolioData } from "data/portfolioData";
 import Header from "elements/layout/Header/Header";
 import { CardWrapper, Main } from "./App.styles";
 
-function App() {
-    return (
-        <>
-            <GlobalStyle />
+const App = () => (
+    <>
+        <GlobalStyle />
 
-            <Main>
-                <Header />
+        <Main>
+            <Header />
 
-                <CardWrapper>
-                    {portfolioData.map((item, index) => {
-                        return (
-                            <Card
-                                index={index}
-                                key={item.headline}
-                                item={item}
-                            />
-                        );
-                    })}
-                </CardWrapper>
-            </Main>
-        </>
-    );
-}
+            <CardWrapper>
+                {portfolioData.map((item, index) => (
+                    <Card index={index} key={item.headline} item={item} />
+                ))}
+            </CardWrapper>
+        </Main>
+    </>
+);
 
 export default App;

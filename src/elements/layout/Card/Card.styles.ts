@@ -1,4 +1,5 @@
 import Text from "elements/components/Text/Text";
+import type { CSSProperties } from "react";
 import styled, { keyframes } from "styled-components";
 
 import { borderRadius, shadow, transition } from "styles/variables";
@@ -64,13 +65,16 @@ export const FocusWrapper = styled.div<{ $link?: string }>`
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 1rem;
-    cursor: ${(props) => props.$link && "pointer"};
+    cursor: ${(props) => (props.$link ? "pointer" : "auto")};
     display: flex;
     justify-content: center;
 `;
 
-export const Image = styled.div<{ src: string; $previewPosition: string }>`
-    background: ${(props) => `url(${props.src})`};
+export const Image = styled.div<{
+    $src: string;
+    $previewPosition: CSSProperties["backgroundPosition"];
+}>`
+    background: ${(props) => `url(${props.$src})`};
     background-repeat: no-repeat;
     background-size: cover;
     background-position: ${(props) => props.$previewPosition};
@@ -90,12 +94,12 @@ export const Badge = styled(Text)`
 `;
 
 export const Flex = styled.div<{
-    $flexDirection?: string;
-    $flexWrap?: string;
-    $justifyContent?: string;
-    $alignItems?: string;
-    $margin?: string;
-    height?: string;
+    $flexDirection?: CSSProperties["flexDirection"];
+    $flexWrap?: CSSProperties["flexWrap"];
+    $justifyContent?: CSSProperties["justifyContent"];
+    $alignItems?: CSSProperties["alignItems"];
+    $margin?: CSSProperties["margin"];
+    $height?: CSSProperties["height"];
 }>`
     display: flex;
     flex-direction: ${(props) => props.$flexDirection};
@@ -103,7 +107,7 @@ export const Flex = styled.div<{
     justify-content: ${(props) => props.$justifyContent};
     align-items: ${(props) => props.$alignItems};
     margin: ${(props) => props.$margin};
-    height: ${(props) => props.height};
+    height: ${(props) => props.$height};
 `;
 
 export const Thumb = styled.div<{ $isActive: boolean }>`

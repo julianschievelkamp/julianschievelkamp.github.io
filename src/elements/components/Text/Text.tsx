@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 import { StyledText } from "./Text.styles";
 
@@ -6,7 +6,7 @@ export interface TextProps {
     children?: ReactNode;
     bold?: boolean;
     color?: string;
-    textAlign?: "left" | "center" | "right" | "justify";
+    textAlign?: CSSProperties["textAlign"];
     margin?: string;
     fontSize?: string;
     toUpperCase?: boolean;
@@ -24,21 +24,19 @@ const Text = ({
     toUpperCase = false,
     className,
     id,
-}: TextProps) => {
-    return (
-        <StyledText
-            id={id}
-            $color={color}
-            $bold={bold}
-            $textAlign={textAlign}
-            $margin={margin}
-            $fontSize={fontSize}
-            $toUpperCase={toUpperCase}
-            className={className}
-        >
-            {children}
-        </StyledText>
-    );
-};
+}: TextProps) => (
+    <StyledText
+        id={id}
+        $color={color}
+        $bold={bold}
+        $textAlign={textAlign}
+        $margin={margin}
+        $fontSize={fontSize}
+        $toUpperCase={toUpperCase}
+        className={className}
+    >
+        {children}
+    </StyledText>
+);
 
 export default Text;

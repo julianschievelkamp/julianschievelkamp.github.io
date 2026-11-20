@@ -8,10 +8,6 @@ export const Main = styled.main`
         padding: 2rem;
     }
 
-    @media ${queries.xxl} {
-        padding-bottom: 4rem;
-    }
-
     a {
         color: black;
 
