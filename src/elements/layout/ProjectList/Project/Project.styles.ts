@@ -9,7 +9,7 @@ const fadeIn = keyframes`
     100% { opacity: 1;  transform: translateY(0);}
 `;
 
-export const StyledCard = styled.li<{ $index: number }>`
+export const StyledProject = styled.li<{ $index: number }>`
     width: 100%;
     opacity: 0;
     animation-name: ${fadeIn};

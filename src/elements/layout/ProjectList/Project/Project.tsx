@@ -2,21 +2,21 @@ import { useState } from "react";
 import type { ProjectData } from "data/projectData";
 import Text from "elements/components/Text/Text";
 import {
-    StyledCard,
+    StyledProject,
     Flex,
     Headline,
     FocusWrapper,
     Image,
     Thumb,
     Badge,
-} from "./Card.styles";
+} from "./Project.styles";
 
-interface CardProps {
+interface ProjectProps {
     project: ProjectData;
     index: number;
 }
 
-const Card = ({ project, index }: CardProps) => {
+const Project = ({ project, index }: ProjectProps) => {
     const [preview, setPreview] = useState(0);
 
     const openLink = () => {
@@ -24,7 +24,7 @@ const Card = ({ project, index }: CardProps) => {
     };
 
     return (
-        <StyledCard $index={index}>
+        <StyledProject $index={index}>
             <div>
                 <FocusWrapper onClick={openLink} $link={project.link}>
                     <Image
@@ -57,8 +57,8 @@ const Card = ({ project, index }: CardProps) => {
                     <Badge key={tool}>{tool}</Badge>
                 ))}
             </div>
-        </StyledCard>
+        </StyledProject>
     );
 };
 
-export default Card;
+export default Project;
