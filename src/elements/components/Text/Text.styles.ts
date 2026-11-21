@@ -10,7 +10,6 @@ export const StyledText = styled.p<{
     $margin?: string;
     $textAlign?: CSSProperties["textAlign"];
     $toUpperCase?: boolean;
-    $whiteSpace?: CSSProperties["whiteSpace"];
 }>`
     text-align: ${({ $textAlign }) => $textAlign};
     font-weight: ${({ $bold }) => ($bold ? "bold" : "normal")};

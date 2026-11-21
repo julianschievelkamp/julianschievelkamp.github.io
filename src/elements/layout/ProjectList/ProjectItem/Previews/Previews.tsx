@@ -21,6 +21,8 @@ const Previews = ({ previews }: PreviewsProps) => {
                 {previews.map((src, index) => (
                     <PreviewButton
                         key={src}
+                        aria-label={`Show preview ${index + 1}`}
+                        aria-pressed={previewIndex === index}
                         onClick={() => setPreviewIndex(index)}
                         $isActive={previewIndex === index}
                     >

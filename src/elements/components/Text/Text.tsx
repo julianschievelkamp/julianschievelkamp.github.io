@@ -12,7 +12,6 @@ interface TextProps {
     margin?: string;
     textAlign?: CSSProperties["textAlign"];
     toUpperCase?: boolean;
-    whiteSpace?: CSSProperties["whiteSpace"];
 }
 
 const Text = ({
@@ -25,7 +24,6 @@ const Text = ({
     margin = "0",
     textAlign,
     toUpperCase = false,
-    whiteSpace,
 }: TextProps) => (
     <StyledText
         $bold={bold}
@@ -36,7 +34,6 @@ const Text = ({
         $margin={margin}
         $textAlign={textAlign}
         $toUpperCase={toUpperCase}
-        $whiteSpace={whiteSpace}
     >
         {children}
     </StyledText>

@@ -6,6 +6,8 @@ interface ButtonProps extends ComponentProps<"button"> {
     onClick: () => void;
 }
 
-const Button = (props: ButtonProps) => <StyledButton {...props} />;
+const Button = (props: ButtonProps) => (
+    <StyledButton type="button" {...props} />
+);
 
 export default Button;
