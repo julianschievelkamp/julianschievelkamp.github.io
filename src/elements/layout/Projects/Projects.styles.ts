@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledProjectList = styled.ul`
+export const StyledProjects = styled.ul`
     padding: 0;
     margin: 0;
     display: flex;

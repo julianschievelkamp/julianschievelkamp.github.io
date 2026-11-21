@@ -1,15 +1,15 @@
-import { StyledProjectList } from "./ProjectList.styles";
+import { StyledProjects } from "./Projects.styles";
 import Project from "./Project/Project";
 import { projectData } from "data/projectData";
 
-const ProjectList = () => {
+const Projects = () => {
     return (
-        <StyledProjectList>
+        <StyledProjects>
             {projectData.map((project, index) => (
                 <Project key={project.title} project={project} index={index} />
             ))}
-        </StyledProjectList>
+        </StyledProjects>
     );
 };
 
-export default ProjectList;
+export default Projects;
