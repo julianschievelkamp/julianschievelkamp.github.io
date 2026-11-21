@@ -19,7 +19,10 @@ const ProjectItem = ({ index, project }: ProjectItemProps) => {
     return (
         <StyledProjectItem $index={index}>
             <Link href={project.link} target="_blank">
-                <Image src={project.preview} alt="" />
+                <Image
+                    src={project.preview}
+                    alt={`Preview of ${project.title}`}
+                />
             </Link>
 
             <section>
