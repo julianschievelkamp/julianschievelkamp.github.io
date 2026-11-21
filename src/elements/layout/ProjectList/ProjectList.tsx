@@ -6,7 +6,11 @@ const ProjectList = () => {
     return (
         <StyledProjectList>
             {projectData.map((project, index) => (
-                <ProjectItem index={index} key={project.title} project={project} />
+                <ProjectItem
+                    index={index}
+                    key={project.title}
+                    project={project}
+                />
             ))}
         </StyledProjectList>
     );

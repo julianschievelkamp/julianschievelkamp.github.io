@@ -5,8 +5,6 @@ interface ImageProps {
     src: string;
 }
 
-const Image = ({ alt, src }: ImageProps) => (
-    <StyledImage alt={alt} src={src} />
-);
+const Image = ({ alt, src }: ImageProps) => <StyledImage alt={alt} src={src} />;
 
 export default Image;

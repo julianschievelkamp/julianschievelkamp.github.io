@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# julianschievelkamp.github.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal project overview, published at <https://julianschievelkamp.github.io/>.
 
-Currently, two official plugins are available:
+Built with React, TypeScript, Vite and styled-components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting started
 
-## Expanding the ESLint configuration
+Requires Node.js and Yarn 4.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-    extends: [
-        // Remove ...tseslint.configs.recommended and replace with this
-        ...tseslint.configs.recommendedTypeChecked,
-        // Alternatively, use this for stricter rules
-        ...tseslint.configs.strictTypeChecked,
-        // Optionally, add this for stylistic rules
-        ...tseslint.configs.stylisticTypeChecked,
-    ],
-    languageOptions: {
-        // other options...
-        parserOptions: {
-            project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-            tsconfigRootDir: import.meta.dirname,
-        },
-    },
-});
+```sh
+yarn install
+yarn start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Scripts
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+| Script              | Description                              |
+| ------------------- | ---------------------------------------- |
+| `yarn start`        | Start the Vite dev server                |
+| `yarn build`        | Type-check and create a production build |
+| `yarn preview`      | Serve the production build locally       |
+| `yarn lint`         | Run ESLint                               |
+| `yarn format`       | Format all files with Prettier           |
+| `yarn format:check` | Check formatting without changing files  |
+| `yarn deploy`       | Build and publish `dist` to GitHub Pages |
 
-export default tseslint.config({
-    plugins: {
-        // Add the react-x and react-dom plugins
-        "react-x": reactX,
-        "react-dom": reactDom,
-    },
-    rules: {
-        // other rules...
-        // Enable its recommended typescript rules
-        ...reactX.configs["recommended-typescript"].rules,
-        ...reactDom.configs.recommended.rules,
-    },
-});
+## Project structure
+
 ```
+src/
+├── assets/      Fonts, icons and images
+├── data/        Content (texts, projects)
+├── elements/
+│   ├── components/   Reusable building blocks (Text, Link, Icon, ...)
+│   ├── layout/       Page sections (Header, ProjectList, ...)
+│   └── pages/        Top-level pages (App)
+└── styles/      Design tokens, global styles and animations
+```
+
+Every component lives in its own folder as `Name.tsx` plus `Name.styles.ts`.
+Colors, transitions and media queries are defined once in `src/styles/variables.ts`.
+
+## Adding a project
+
+Add an entry to `projectData` in `src/data/projectData.ts`.
