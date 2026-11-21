@@ -129,7 +129,7 @@ Error generating stack: `+e.message+`
     background: ${tr.background};
     padding: 0.5rem 1rem;
     border: 1px solid ${tr.border};
-`,kr=({index:e,project:t})=>(0,F.jsxs)(Tr,{$index:e,children:[(0,F.jsx)(Cr,{src:t.preview,alt:``}),(0,F.jsxs)(`section`,{children:[(0,F.jsx)(Qn,{type:`h2`,children:(0,F.jsx)(ir,{href:t.link,target:`_blank`,children:t.title})}),(0,F.jsx)(Er,{children:t.description}),(0,F.jsx)(Dr,{children:t.tools.map(e=>(0,F.jsx)(Or,{children:e},e))})]})]}),Ar=Wn.ul`
+`,kr=({index:e,project:t})=>(0,F.jsxs)(Tr,{$index:e,children:[(0,F.jsx)(ir,{href:t.link,target:`_blank`,children:(0,F.jsx)(Cr,{src:t.preview,alt:``})}),(0,F.jsxs)(`section`,{children:[(0,F.jsx)(Qn,{type:`h2`,children:(0,F.jsx)(ir,{href:t.link,target:`_blank`,children:t.title})}),(0,F.jsx)(Er,{children:t.description}),(0,F.jsx)(Dr,{children:t.tools.map(e=>(0,F.jsx)(Or,{children:e},e))})]})]}),Ar=Wn.ul`
     display: flex;
     flex-direction: column;
     gap: 1rem;
