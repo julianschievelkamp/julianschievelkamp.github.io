@@ -10,28 +10,28 @@ const fadeInHeader = keyframes`
     100% { opacity: 1; }
 `;
 
-export const StyledHeader = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+export const StyledHeader = styled.header`
+    position: relative;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
 
+    opacity: 0;
     animation-name: ${fadeInHeader};
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    opacity: 0;
-`;
 
-export const Divider = styled.div`
-    border-bottom: 1px solid lightgrey;
-    width: 0;
-    animation-name: ${fadeInDivider};
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: 0.3s;
-`;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: lightgrey;
+        left: 0;
+        bottom: 0;
+        height: 1px;
 
-export const Flex = styled.div`
-    display: flex;
-    justify-content: space-between;
+        width: 0;
+        animation-name: ${fadeInDivider};
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 0.3s;
+    }
 `;

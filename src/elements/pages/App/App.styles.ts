@@ -7,12 +7,4 @@ export const Main = styled.main`
     @media ${queries.lg} {
         padding: 2rem;
     }
-
-    a {
-        color: black;
-
-        &:hover {
-            color: #ffca00;
-        }
-    }
 `;

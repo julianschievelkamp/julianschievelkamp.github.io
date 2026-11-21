@@ -2,38 +2,41 @@ import type { CSSProperties, ReactNode } from "react";
 
 import { StyledText } from "./Text.styles";
 
-export interface TextProps {
-    children?: ReactNode;
+interface TextProps {
     bold?: boolean;
-    color?: string;
-    textAlign?: CSSProperties["textAlign"];
-    margin?: string;
-    fontSize?: string;
-    toUpperCase?: boolean;
+    children?: ReactNode;
     className?: string;
+    color?: string;
+    fontSize?: string;
     id?: string;
+    margin?: string;
+    textAlign?: CSSProperties["textAlign"];
+    toUpperCase?: boolean;
+    whiteSpace?: CSSProperties["whiteSpace"];
 }
 
 const Text = ({
-    children,
     bold,
-    color,
-    textAlign,
-    margin = "0",
-    fontSize = "0.875rem",
-    toUpperCase = false,
+    children,
     className,
+    color,
+    fontSize = "0.875rem",
     id,
+    margin = "0",
+    textAlign,
+    toUpperCase = false,
+    whiteSpace,
 }: TextProps) => (
     <StyledText
-        id={id}
-        $color={color}
         $bold={bold}
-        $textAlign={textAlign}
-        $margin={margin}
-        $fontSize={fontSize}
-        $toUpperCase={toUpperCase}
         className={className}
+        $color={color}
+        $fontSize={fontSize}
+        id={id}
+        $margin={margin}
+        $textAlign={textAlign}
+        $toUpperCase={toUpperCase}
+        $whiteSpace={whiteSpace}
     >
         {children}
     </StyledText>

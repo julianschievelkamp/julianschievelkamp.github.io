@@ -1,18 +1,10 @@
 import Text from "elements/components/Text/Text";
-import { StyledHeader, Divider, Flex } from "./Header.styles";
+import { StyledHeader } from "./Header.styles";
+import { languageData } from "data/languageData";
 
 const Header = () => (
     <StyledHeader>
-        <Flex>
-            <Text>
-                <strong>Projects</strong> //{" "}
-                <a href="mailto:mail@julianschievelkamp.com">
-                    mail@julianschievelkamp.com
-                </a>
-            </Text>
-        </Flex>
-
-        <Divider />
+        <Text>{languageData.header}</Text>
     </StyledHeader>
 );
 
