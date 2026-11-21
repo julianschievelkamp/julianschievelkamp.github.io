@@ -9,6 +9,7 @@ import {
     Tool,
     Tools,
 } from "./ProjectItem.styles";
+import Text from "elements/components/Text/Text";
 
 interface ProjectItemProps {
     index: number;
@@ -36,7 +37,9 @@ const ProjectItem = ({ index, project }: ProjectItemProps) => {
 
                 <Tools>
                     {project.tools.map((tool) => (
-                        <Tool key={tool}>{tool}</Tool>
+                        <Tool key={tool}>
+                            <Text>{tool}</Text>
+                        </Tool>
                     ))}
                 </Tools>
             </section>

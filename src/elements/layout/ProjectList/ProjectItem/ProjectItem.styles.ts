@@ -31,14 +31,16 @@ export const Description = styled(Text)`
     margin: 1rem 0;
 `;
 
-export const Tools = styled.div`
+export const Tools = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    padding: 0;
 `;
 
-export const Tool = styled(Text)`
-    background: ${colors.background};
+export const Tool = styled.li`
+    list-style: none;
     padding: 0.5rem 1rem;
+    background: ${colors.background};
     border: 1px solid ${colors.border};
 `;
