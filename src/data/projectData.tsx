@@ -15,15 +15,15 @@ export const projectData: ProjectData[] = [
     {
         title: "Portfolio",
         description:
-            "A portfolio website showcasing artistic images and videos. Live at www.julianschievelkamp.com. The site is a pure frontend project: HTML is pre-rendered at build time, and there is no backend, database or user input.",
+            "A gallery-like portfolio for my fine art photography and video work, built with React, TypeScript and Vike as a fully pre-rendered static site. Highlights include truly gapless audio loops built on the Web Audio API and a custom pinch-to-zoom for exploring artwork details on touch devices. Accessibility and SEO were part of the design from the start, with semantic markup, keyboard navigation and structured data.",
         previews: [DadaYaga, Andromeda, Versus1, Viscosity],
         tools: [
             "React",
             "Typescript",
             "Vike (SSR)",
-            "Claude Code",
             "Adobe Software",
             "Unreal Engine",
+            "Blender",
         ],
         link: "https://www.julianschievelkamp.com/",
     },

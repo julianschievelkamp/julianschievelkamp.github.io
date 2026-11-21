@@ -1,0 +1,30 @@
+import { styled } from "styled-components";
+
+import { colors, transition } from "styles/variables";
+
+export const StyledIcon = styled.span<{
+    $color?: string;
+    $margin?: string;
+    $padding?: string;
+    $size?: string;
+}>`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: ${({ $size }) => $size};
+    height: ${({ $size }) => $size};
+    min-height: ${({ $size }) => $size};
+    min-width: ${({ $size }) => $size};
+    padding: ${({ $padding }) => $padding};
+    margin: ${({ $margin }) => $margin};
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: content-box;
+
+    svg {
+        transition: fill ${transition.default};
+        fill: ${({ $color }) => $color ?? colors.secondary};
+        width: ${({ $size }) => $size};
+        height: ${({ $size }) => $size};
+    }
+`;

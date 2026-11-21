@@ -1,3 +1,4 @@
+import Text from "elements/components/Text/Text";
 import styled, { keyframes } from "styled-components";
 
 const fadeInDivider = keyframes`
@@ -34,4 +35,9 @@ export const StyledHeader = styled.header`
         animation-duration: 1s;
         animation-delay: 0.3s;
     }
+`;
+
+export const StyledText = styled(Text)`
+    display: flex;
+    align-items: center;
 `;

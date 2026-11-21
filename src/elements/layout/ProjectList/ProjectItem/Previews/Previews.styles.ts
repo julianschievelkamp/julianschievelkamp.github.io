@@ -8,8 +8,8 @@ export const StyledPreviews = styled.div`
     gap: 0.25rem;
 
     @media ${queries.sm} {
-        min-width: 20rem;
-        max-width: 20rem;
+        min-width: 10rem;
+        max-width: 10rem;
     }
 `;
 

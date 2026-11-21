@@ -17,6 +17,14 @@ export default createGlobalStyle`
         min-height: 100svh;
         position: relative;
         overflow-x: clip;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    html {
+        text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
     }
 
     body {
