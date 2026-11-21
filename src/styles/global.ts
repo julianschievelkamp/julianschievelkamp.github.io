@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import fonts from "./fonts";
+import { colors } from "./variables";
 
 export default createGlobalStyle`
     ${fonts};
@@ -21,5 +22,9 @@ export default createGlobalStyle`
     body {
         overflow-y: scroll;
         background-color: whitesmoke;
+    }
+
+    :focus-visible {
+        outline: 2px solid ${colors.highlight};
     }
 `;

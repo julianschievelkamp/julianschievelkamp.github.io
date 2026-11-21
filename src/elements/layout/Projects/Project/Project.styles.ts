@@ -1,8 +1,6 @@
-import Text from "elements/components/Text/Text";
-import type { CSSProperties } from "react";
 import styled, { keyframes } from "styled-components";
 
-import { borderRadius, transition } from "styles/variables";
+import { borderRadius } from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
@@ -22,84 +20,4 @@ export const StyledProject = styled.li<{ $index: number }>`
     border: 1px solid lightgrey;
     padding: 1rem;
     background-color: white;
-`;
-
-export const Headline = styled.button`
-    background: #ffca00;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    border-radius: 3px;
-    border: none;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.5;
-    cursor: pointer;
-    color: black;
-`;
-
-export const FocusWrapper = styled.div<{ $link?: string }>`
-    position: relative;
-    width: 100%;
-    height: 20rem;
-    min-height: 20rem;
-    overflow: hidden;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    cursor: ${(props) => (props.$link ? "pointer" : "auto")};
-    display: flex;
-    justify-content: center;
-`;
-
-export const Image = styled.div<{
-    $src: string;
-}>`
-    background: ${(props) => `url(${props.$src})`};
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    transition: transform ${transition};
-`;
-
-export const Badge = styled(Text)`
-    background: whitesmoke;
-    border-radius: ${borderRadius.round};
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-    margin: 0.5rem;
-    margin-left: 0;
-    border: 1px solid lightgrey;
-`;
-
-export const Flex = styled.div<{
-    $flexDirection?: CSSProperties["flexDirection"];
-    $flexWrap?: CSSProperties["flexWrap"];
-    $justifyContent?: CSSProperties["justifyContent"];
-    $alignItems?: CSSProperties["alignItems"];
-    $margin?: CSSProperties["margin"];
-    $height?: CSSProperties["height"];
-}>`
-    display: flex;
-    flex-direction: ${(props) => props.$flexDirection};
-    flex-wrap: ${(props) => props.$flexWrap};
-    justify-content: ${(props) => props.$justifyContent};
-    align-items: ${(props) => props.$alignItems};
-    margin: ${(props) => props.$margin};
-    height: ${(props) => props.$height};
-`;
-
-export const Thumb = styled.div<{ $isActive: boolean }>`
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-    overflow: hidden;
-    transition: ${transition};
-    background: ${(props) => (props.$isActive ? "#ffca00" : "transparent")};
-    padding: 3px;
-    margin-left: 2px;
-    border-radius: 3px;
-
-    div {
-        border-radius: 3px;
-    }
 `;

@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <StyledProjects>
             {projectData.map((project, index) => (
-                <Project key={project.title} project={project} index={index} />
+                <Project index={index} key={project.title} project={project} />
             ))}
         </StyledProjects>
     );

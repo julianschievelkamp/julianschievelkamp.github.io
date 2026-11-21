@@ -13,11 +13,15 @@ export const colors = {
 };
 
 export const queries = {
-    sm: `screen and (min-width: 576px)`,
-    md: `screen and (min-width: 768px)`,
-    lg: `screen and (min-width: 992px)`,
-    xl: `screen and (min-width: 1200px)`,
-    xxl: `screen and (min-width: 1400px)`,
+    sm: "screen and (min-width: 576px)",
+    md: "screen and (min-width: 768px)",
+    lg: "screen and (min-width: 992px)",
+    xl: "screen and (min-width: 1200px)",
+    hover: "(hover: hover)",
+    portrait: "(orientation: portrait)",
+    landscape: "(orientation: landscape)",
+    landscapeLgMax:
+        "screen and (max-width: 991px) and (orientation: landscape)",
 };
 
 export const borderRadius = {

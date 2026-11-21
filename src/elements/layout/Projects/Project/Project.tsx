@@ -1,61 +1,25 @@
-import { useState } from "react";
 import type { ProjectData } from "data/projectData";
 import Text from "elements/components/Text/Text";
-import {
-    StyledProject,
-    Flex,
-    Headline,
-    FocusWrapper,
-    Image,
-    Thumb,
-    Badge,
-} from "./Project.styles";
+import { StyledProject } from "./Project.styles";
+import Previews from "./Previews/Previews";
+import Tools from "./Tools/Tools";
+import Headline from "elements/components/Headline/Headline";
 
 interface ProjectProps {
-    project: ProjectData;
     index: number;
+    project: ProjectData;
 }
 
-const Project = ({ project, index }: ProjectProps) => {
-    const [preview, setPreview] = useState(0);
-
-    const openLink = () => {
-        if (project.link) window.open(project.link);
-    };
-
+const Project = ({ index, project }: ProjectProps) => {
     return (
         <StyledProject $index={index}>
-            <div>
-                <FocusWrapper onClick={openLink} $link={project.link}>
-                    <Image
-                        $src={project.previews[preview]}
-                        className="preview"
-                    />
-                </FocusWrapper>
-
-                <Flex
-                    $margin="0 0 0 0.5rem"
-                    $flexWrap="wrap"
-                    $justifyContent="flex-end"
-                >
-                    {project.previews.map((src, i) => (
-                        <Thumb
-                            key={src}
-                            onClick={() => setPreview(i)}
-                            $isActive={preview === i}
-                        >
-                            <Image $src={src} />
-                        </Thumb>
-                    ))}
-                </Flex>
-            </div>
+            <Previews previews={project.previews} />
 
             <div>
-                <Headline onClick={openLink}>{project.title}</Headline>
+                <Headline type="h2">{project.title}</Headline>
                 <Text margin="1rem 0">{project.description}</Text>
-                {project.tools.map((tool) => (
-                    <Badge key={tool}>{tool}</Badge>
-                ))}
+
+                <Tools tools={project.tools} />
             </div>
         </StyledProject>
     );
