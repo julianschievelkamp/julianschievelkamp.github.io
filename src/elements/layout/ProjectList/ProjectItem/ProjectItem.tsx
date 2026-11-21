@@ -1,18 +1,18 @@
 import type { ProjectData } from "data/projectData";
 import Text from "elements/components/Text/Text";
-import { StyledProject } from "./Project.styles";
+import { StyledProjectItem } from "./ProjectItem.styles";
 import Previews from "./Previews/Previews";
 import Tools from "./Tools/Tools";
 import Headline from "elements/components/Headline/Headline";
 
-interface ProjectProps {
+interface ProjectItemProps {
     index: number;
     project: ProjectData;
 }
 
-const Project = ({ index, project }: ProjectProps) => {
+const ProjectItem = ({ index, project }: ProjectItemProps) => {
     return (
-        <StyledProject $index={index}>
+        <StyledProjectItem $index={index}>
             <Previews previews={project.previews} />
 
             <div>
@@ -21,8 +21,8 @@ const Project = ({ index, project }: ProjectProps) => {
 
                 <Tools tools={project.tools} />
             </div>
-        </StyledProject>
+        </StyledProjectItem>
     );
 };
 
-export default Project;
+export default ProjectItem;

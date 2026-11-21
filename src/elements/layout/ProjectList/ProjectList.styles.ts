@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledProjects = styled.ul`
+export const StyledProjectList = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 1rem;

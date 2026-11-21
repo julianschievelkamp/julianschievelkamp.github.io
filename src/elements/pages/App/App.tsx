@@ -1,7 +1,7 @@
 import GlobalStyle from "styles/global";
 import Header from "elements/layout/Header/Header";
 import { Main } from "./App.styles";
-import Projects from "elements/layout/Projects/Projects";
+import ProjectList from "elements/layout/ProjectList/ProjectList";
 
 const App = () => (
     <>
@@ -10,7 +10,7 @@ const App = () => (
         <Main>
             <Header />
 
-            <Projects />
+            <ProjectList />
         </Main>
     </>
 );
