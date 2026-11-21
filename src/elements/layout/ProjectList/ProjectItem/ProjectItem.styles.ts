@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { borderRadius } from "styles/variables";
+import { borderRadius, queries } from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
@@ -15,9 +15,16 @@ export const StyledProjectItem = styled.li<{ $index: number }>`
     animation-duration: 1s;
     animation-delay: ${(props) => `${props.$index * 0.2}s`};
 
-    display: flex;
-    border-radius: ${borderRadius.edged};
-    border: 1px solid lightgrey;
     padding: 1rem;
     background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: ${borderRadius.edged};
+
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    @media ${queries.sm} {
+        flex-direction: row;
+    }
 `;

@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { StyledPreviews, Thumb, ThumbsWrapper } from "./Previews.styles";
+import {
+    StyledPreviews,
+    PreviewButton,
+    PreviewButtons,
+} from "./Previews.styles";
 import Image from "elements/components/Image/Image";
 
 interface PreviewsProps {
@@ -13,17 +17,17 @@ const Previews = ({ previews }: PreviewsProps) => {
         <StyledPreviews>
             <Image src={previews[previewIndex]} alt="" />
 
-            <ThumbsWrapper>
+            <PreviewButtons>
                 {previews.map((src, index) => (
-                    <Thumb
+                    <PreviewButton
                         key={src}
                         onClick={() => setPreviewIndex(index)}
                         $isActive={previewIndex === index}
                     >
-                        <Image src={src} alt="" />
-                    </Thumb>
+                        <Image src={src} alt="" width="100%" height="100%" />
+                    </PreviewButton>
                 ))}
-            </ThumbsWrapper>
+            </PreviewButtons>
         </StyledPreviews>
     );
 };

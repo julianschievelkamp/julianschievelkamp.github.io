@@ -2,19 +2,29 @@ import Button from "elements/components/Button/Button";
 import styled from "styled-components";
 import { queries } from "styles/variables";
 
-export const StyledPreviews = styled.div``;
+export const StyledPreviews = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 
-export const ThumbsWrapper = styled.div`
+    @media ${queries.sm} {
+        min-width: 20rem;
+        max-width: 20rem;
+    }
+`;
+
+export const PreviewButtons = styled.div`
     display: flex;
     gap: 0.25rem;
 `;
 
-export const Thumb = styled(Button)<{ $isActive: boolean }>`
-    width: 3rem;
-    height: 3rem;
-    overflow: clip;
+export const PreviewButton = styled(Button)<{ $isActive: boolean }>`
+    display: inline-flex;
+    aspect-ratio: 1/1;
+    flex: 1;
 
     img {
+        object-fit: cover;
         opacity: ${({ $isActive }) => ($isActive ? 1 : 0.5)};
     }
 
