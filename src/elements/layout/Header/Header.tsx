@@ -8,6 +8,7 @@ import { colors } from "styles/variables";
 const Header = () => (
     <StyledHeader>
         <Headline>{languageData.header.title}</Headline>
+
         <Text color={colors.secondary}>
             <Link href={`mailto:${languageData.header.mail}`}>
                 {languageData.header.mail}

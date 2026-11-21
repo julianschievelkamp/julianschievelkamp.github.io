@@ -15,7 +15,7 @@ const Previews = ({ previews }: PreviewsProps) => {
 
     return (
         <StyledPreviews>
-            <Image src={previews[previewIndex]} alt="" />
+            <Image src={previews[previewIndex]} alt="" width="100%" />
 
             <PreviewButtons>
                 {previews.map((src, index) => (
@@ -24,7 +24,7 @@ const Previews = ({ previews }: PreviewsProps) => {
                         onClick={() => setPreviewIndex(index)}
                         $isActive={previewIndex === index}
                     >
-                        <Image src={src} alt="" width="100%" height="100%" />
+                        <Image src={src} alt="" width="100%" />
                     </PreviewButton>
                 ))}
             </PreviewButtons>

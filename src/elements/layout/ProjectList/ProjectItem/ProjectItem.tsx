@@ -16,7 +16,7 @@ const ProjectItem = ({ index, project }: ProjectItemProps) => {
         <StyledProjectItem $index={index}>
             <Previews previews={project.previews} />
 
-            <div>
+            <section>
                 <Headline type="h2">
                     <Link href={project.link} target="_blank">
                         {project.title}
@@ -26,7 +26,7 @@ const ProjectItem = ({ index, project }: ProjectItemProps) => {
                 <Text margin="1rem 0">{project.description}</Text>
 
                 <Tools tools={project.tools} />
-            </div>
+            </section>
         </StyledProjectItem>
     );
 };

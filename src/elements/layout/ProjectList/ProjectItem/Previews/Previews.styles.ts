@@ -24,7 +24,6 @@ export const PreviewButton = styled(Button)<{ $isActive: boolean }>`
     flex: 1;
 
     img {
-        object-fit: cover;
         opacity: ${({ $isActive }) => ($isActive ? 1 : 0.5)};
     }
 
