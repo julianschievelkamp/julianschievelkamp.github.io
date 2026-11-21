@@ -15,7 +15,6 @@ export default css`
     @font-face {
         font-family: "Poppins";
         font-style: normal;
-        font-weight: 300;
         src: url(${PoppinsLight}) format("woff2");
         font-display: swap;
     }
