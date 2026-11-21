@@ -1,6 +1,7 @@
-import { StyledProjectList } from "./ProjectList.styles";
-import ProjectItem from "./ProjectItem/ProjectItem";
 import { projectData } from "data/projectData";
+
+import ProjectItem from "./ProjectItem/ProjectItem";
+import { StyledProjectList } from "./ProjectList.styles";
 
 const ProjectList = () => {
     return (

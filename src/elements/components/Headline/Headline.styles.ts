@@ -1,17 +1,9 @@
-import { css, styled } from "styled-components";
+import { styled } from "styled-components";
 
-const headlineStyles = css`
+export const StyledHeadline = styled.h1`
     margin: 0;
     text-transform: uppercase;
     font-family: "PlayfairDisplay", sans-serif;
     font-weight: 900;
     line-height: 1.5;
-`;
-
-export const H1 = styled.h1`
-    ${headlineStyles}
-`;
-
-export const H2 = styled.h2`
-    ${headlineStyles}
 `;

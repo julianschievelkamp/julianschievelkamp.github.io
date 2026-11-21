@@ -1,6 +1,7 @@
+import styled, { keyframes } from "styled-components";
+
 import Icon from "elements/components/Icon/Icon";
 import Text from "elements/components/Text/Text";
-import styled, { keyframes } from "styled-components";
 import { playOnce } from "styles/animations";
 import { colors } from "styles/variables";
 

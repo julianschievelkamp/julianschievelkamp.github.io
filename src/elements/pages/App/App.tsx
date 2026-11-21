@@ -1,7 +1,8 @@
-import GlobalStyle from "styles/global";
 import Header from "elements/layout/Header/Header";
-import { Main } from "./App.styles";
 import ProjectList from "elements/layout/ProjectList/ProjectList";
+import GlobalStyle from "styles/global";
+
+import { Main } from "./App.styles";
 
 const App = () => (
     <>

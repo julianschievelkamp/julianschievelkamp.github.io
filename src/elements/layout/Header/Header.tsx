@@ -1,7 +1,8 @@
-import { ContactIcon, ContactLine, StyledHeader } from "./Header.styles";
 import { languageData } from "data/languageData";
-import Link from "elements/components/Link/Link";
 import Headline from "elements/components/Headline/Headline";
+import Link from "elements/components/Link/Link";
+
+import { ContactIcon, ContactLine, StyledHeader } from "./Header.styles";
 
 const { title, mail, git } = languageData.header;
 

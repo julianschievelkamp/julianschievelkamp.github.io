@@ -1,5 +1,6 @@
-import Button from "elements/components/Button/Button";
 import styled from "styled-components";
+
+import Button from "elements/components/Button/Button";
 import { queries } from "styles/variables";
 
 export const StyledPreviews = styled.div`

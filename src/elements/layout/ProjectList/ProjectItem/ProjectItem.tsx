@@ -1,9 +1,10 @@
 import type { ProjectData } from "data/projectData";
-import { Description, StyledProjectItem } from "./ProjectItem.styles";
-import Previews from "./Previews/Previews";
-import Tools from "./Tools/Tools";
 import Headline from "elements/components/Headline/Headline";
 import Link from "elements/components/Link/Link";
+
+import Previews from "./Previews/Previews";
+import { Description, StyledProjectItem } from "./ProjectItem.styles";
+import Tools from "./Tools/Tools";
 
 interface ProjectItemProps {
     index: number;
