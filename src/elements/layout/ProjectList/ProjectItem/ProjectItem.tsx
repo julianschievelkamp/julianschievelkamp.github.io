@@ -18,7 +18,9 @@ interface ProjectItemProps {
 const ProjectItem = ({ index, project }: ProjectItemProps) => {
     return (
         <StyledProjectItem $index={index}>
-            <Image src={project.preview} alt="" />
+            <Link href={project.link} target="_blank">
+                <Image src={project.preview} alt="" />
+            </Link>
 
             <section>
                 <Headline type="h2">
