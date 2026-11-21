@@ -1,15 +1,11 @@
-import type { ProjectData } from "data/projectData";
 import { StyledCardList } from "./CardList.styles";
 import Card from "./Card/Card";
+import { projectData } from "data/projectData";
 
-interface CardListProps {
-    list: ProjectData[];
-}
-
-const CardList = ({ list }: CardListProps) => {
+const CardList = () => {
     return (
         <StyledCardList>
-            {list.map((project, index) => (
+            {projectData.map((project, index) => (
                 <Card key={project.title} project={project} index={index} />
             ))}
         </StyledCardList>

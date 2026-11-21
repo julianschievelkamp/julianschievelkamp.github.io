@@ -20,6 +20,6 @@ export const StyledText = styled.p<{
     text-transform: ${({ $toUpperCase }) =>
         $toUpperCase ? "uppercase" : "none"};
     line-height: 1.5;
-    transition: color ${transition};
+    transition: color ${transition.default};
     font-family: "Poppins", sans-serif;
 `;

@@ -1,3 +1,17 @@
+export const TRANSITION_DEFAULT = 300;
+export const transition = {
+    default: `${TRANSITION_DEFAULT}ms ease-out`,
+    defaultIn: `${TRANSITION_DEFAULT}ms ease-in`,
+    fast: `${TRANSITION_DEFAULT / 3}ms ease-out`,
+};
+
+export const colors = {
+    highlight: "rgba(255, 200, 0, 1)",
+    secondary: "rgba(0, 0, 0, 0.6)",
+    playButton: "rgba(0, 0, 0, 0.4)",
+    fade: "rgb(245, 245, 245)",
+};
+
 export const queries = {
     sm: `screen and (min-width: 576px)`,
     md: `screen and (min-width: 768px)`,
@@ -10,5 +24,3 @@ export const borderRadius = {
     round: "100px",
     edged: "10px",
 };
-
-export const transition = "300ms ease-out";
