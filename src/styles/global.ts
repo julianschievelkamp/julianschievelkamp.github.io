@@ -29,7 +29,7 @@ export default createGlobalStyle`
 
     body {
         overflow-y: scroll;
-        background-color: whitesmoke;
+        background-color: ${colors.background};
     }
 
     :focus-visible {

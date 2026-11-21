@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import { styled } from "styled-components";
 
-import { transition } from "styles/variables";
+import { colors, transition } from "styles/variables";
 
 export const StyledText = styled.p<{
     $bold?: boolean;
@@ -15,7 +15,7 @@ export const StyledText = styled.p<{
     font-weight: ${({ $bold }) => ($bold ? "bold" : "normal")};
     font-size: ${({ $fontSize }) => $fontSize};
     margin: ${({ $margin }) => $margin};
-    color: ${({ $color }) => $color ?? "black"};
+    color: ${({ $color }) => $color ?? colors.text};
     text-transform: ${({ $toUpperCase }) =>
         $toUpperCase ? "uppercase" : "none"};
     line-height: 1.5;

@@ -1,5 +1,7 @@
 import Text from "elements/components/Text/Text";
 import styled, { keyframes } from "styled-components";
+import { playOnce } from "styles/animations";
+import { colors } from "styles/variables";
 
 const fadeInDivider = keyframes`
     0% { width: 0; }
@@ -17,23 +19,18 @@ export const StyledHeader = styled.header`
     margin-bottom: 1rem;
 
     opacity: 0;
-    animation-name: ${fadeInHeader};
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
+    ${playOnce(fadeInHeader)}
 
     &::after {
         content: "";
         position: absolute;
-        background-color: lightgrey;
+        background-color: ${colors.border};
         left: 0;
         bottom: 0;
         height: 1px;
 
         width: 0;
-        animation-name: ${fadeInDivider};
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-delay: 0.3s;
+        ${playOnce(fadeInDivider, "0.3s")}
     }
 `;
 

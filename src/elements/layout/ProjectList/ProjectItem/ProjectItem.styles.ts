@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
-import { queries } from "styles/variables";
+import { playOnce } from "styles/animations";
+import { colors, queries } from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
@@ -8,17 +9,13 @@ const fadeIn = keyframes`
 `;
 
 export const StyledProjectItem = styled.li<{ $index: number }>`
-    width: 100%;
     opacity: 0;
-    animation-name: ${fadeIn};
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: ${(props) => `${props.$index * 0.2}s`};
+    ${({ $index }) => playOnce(fadeIn, `${$index * 0.2}s`)}
 
+    width: 100%;
     padding: 1rem;
-    background-color: white;
-    border: 1px solid lightgrey;
-
+    background-color: ${colors.surface};
+    border: 1px solid ${colors.border};
     display: flex;
     gap: 1rem;
     flex-direction: column;
