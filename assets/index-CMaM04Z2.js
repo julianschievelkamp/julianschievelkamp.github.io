@@ -191,7 +191,6 @@ Error generating stack: `+e.message+`
     @font-face {
         font-family: "Poppins";
         font-style: normal;
-        font-weight: 300;
         src: url(${`/assets/Poppins-Light-BBOoPhLm.woff2`}) format("woff2");
         font-display: swap;
     }
@@ -217,9 +216,7 @@ Error generating stack: `+e.message+`
         min-height: 100svh;
         position: relative;
         overflow-x: clip;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
     }
 
     html {
@@ -228,8 +225,12 @@ Error generating stack: `+e.message+`
     }
 
     body {
-        overflow-y: scroll;
         background-color: ${er.background};
+        overflow-y: scroll;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     :focus-visible {
