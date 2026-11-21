@@ -1,10 +1,14 @@
 import type { ProjectData } from "data/projectData";
 import Headline from "elements/components/Headline/Headline";
 import Link from "elements/components/Link/Link";
+import Image from "elements/components/Image/Image";
 
-import Previews from "./Previews/Previews";
-import { Description, StyledProjectItem } from "./ProjectItem.styles";
-import Tools from "./Tools/Tools";
+import {
+    Description,
+    StyledProjectItem,
+    Tool,
+    Tools,
+} from "./ProjectItem.styles";
 
 interface ProjectItemProps {
     index: number;
@@ -14,7 +18,7 @@ interface ProjectItemProps {
 const ProjectItem = ({ index, project }: ProjectItemProps) => {
     return (
         <StyledProjectItem $index={index}>
-            <Previews previews={project.previews} />
+            <Image src={project.preview} alt="" />
 
             <section>
                 <Headline type="h2">
@@ -25,7 +29,11 @@ const ProjectItem = ({ index, project }: ProjectItemProps) => {
 
                 <Description>{project.description}</Description>
 
-                <Tools tools={project.tools} />
+                <Tools>
+                    {project.tools.map((tool) => (
+                        <Tool key={tool}>{tool}</Tool>
+                    ))}
+                </Tools>
             </section>
         </StyledProjectItem>
     );

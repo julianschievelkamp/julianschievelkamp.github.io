@@ -17,15 +17,28 @@ export const StyledProjectItem = styled.li<{ $index: number }>`
     padding: 1rem;
     background-color: ${colors.surface};
     border: 1px solid ${colors.border};
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
 
-    @media ${queries.sm} {
-        flex-direction: row;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+
+    @media ${queries.md} {
+        grid-template-columns: 1fr 1fr;
     }
 `;
 
 export const Description = styled(Text)`
     margin: 1rem 0;
+`;
+
+export const Tools = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+`;
+
+export const Tool = styled(Text)`
+    background: ${colors.background};
+    padding: 0.5rem 1rem;
+    border: 1px solid ${colors.border};
 `;

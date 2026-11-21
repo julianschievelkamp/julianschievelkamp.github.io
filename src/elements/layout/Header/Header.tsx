@@ -3,24 +3,22 @@ import Headline from "elements/components/Headline/Headline";
 import Link from "elements/components/Link/Link";
 
 import { ContactIcon, ContactLine, StyledHeader } from "./Header.styles";
+import { icons } from "elements/components/Icon/icons";
 
-const { title, mail, git } = languageData.header;
+const { title, links } = languageData.header;
 
 const Header = () => (
     <StyledHeader>
         <Headline>{title}</Headline>
 
-        <ContactLine>
-            <ContactIcon name="mail" />
-            <Link href={`mailto:${mail}`}>{mail}</Link>
-        </ContactLine>
-
-        <ContactLine>
-            <ContactIcon name="link" />
-            <Link href={git.url} target="_blank">
-                {git.label}
-            </Link>
-        </ContactLine>
+        {links.map(({ icon, label, url }) => (
+            <ContactLine key={label}>
+                <ContactIcon name={icon as keyof typeof icons} />
+                <Link href={url} target="_blank">
+                    {label}
+                </Link>
+            </ContactLine>
+        ))}
     </StyledHeader>
 );
 
