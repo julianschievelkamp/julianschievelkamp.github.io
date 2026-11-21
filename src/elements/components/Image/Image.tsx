@@ -2,22 +2,11 @@ import { StyledImage } from "./Image.styles";
 
 interface ImageProps {
     alt: string;
-    height?: string;
-    margin?: string;
     src: string;
-    width?: string;
 }
 
-const Image = ({ alt, height, margin, src, width }: ImageProps) => {
-    return (
-        <StyledImage
-            alt={alt}
-            $height={height}
-            $margin={margin}
-            src={src}
-            $width={width}
-        />
-    );
-};
+const Image = ({ alt, src }: ImageProps) => (
+    <StyledImage alt={alt} src={src} />
+);
 
 export default Image;

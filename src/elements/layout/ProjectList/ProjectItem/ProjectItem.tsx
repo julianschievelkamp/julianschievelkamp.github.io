@@ -1,6 +1,5 @@
 import type { ProjectData } from "data/projectData";
-import Text from "elements/components/Text/Text";
-import { StyledProjectItem } from "./ProjectItem.styles";
+import { Description, StyledProjectItem } from "./ProjectItem.styles";
 import Previews from "./Previews/Previews";
 import Tools from "./Tools/Tools";
 import Headline from "elements/components/Headline/Headline";
@@ -23,7 +22,7 @@ const ProjectItem = ({ index, project }: ProjectItemProps) => {
                     </Link>
                 </Headline>
 
-                <Text margin="1rem 0">{project.description}</Text>
+                <Description>{project.description}</Description>
 
                 <Tools tools={project.tools} />
             </section>

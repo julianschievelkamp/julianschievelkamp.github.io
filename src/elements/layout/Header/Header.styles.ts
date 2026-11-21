@@ -1,3 +1,4 @@
+import Icon from "elements/components/Icon/Icon";
 import Text from "elements/components/Text/Text";
 import styled, { keyframes } from "styled-components";
 import { playOnce } from "styles/animations";
@@ -34,7 +35,16 @@ export const StyledHeader = styled.header`
     }
 `;
 
-export const StyledText = styled(Text)`
+export const ContactLine = styled(Text)`
     display: flex;
     align-items: center;
+    color: ${colors.secondary};
+
+    &:first-of-type {
+        margin-top: 1rem;
+    }
+`;
+
+export const ContactIcon = styled(Icon)`
+    margin-right: 0.25rem;
 `;

@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
+import Text from "elements/components/Text/Text";
 import { playOnce } from "styles/animations";
 import { colors, queries } from "styles/variables";
 
@@ -23,4 +24,8 @@ export const StyledProjectItem = styled.li<{ $index: number }>`
     @media ${queries.sm} {
         flex-direction: row;
     }
+`;
+
+export const Description = styled(Text)`
+    margin: 1rem 0;
 `;
