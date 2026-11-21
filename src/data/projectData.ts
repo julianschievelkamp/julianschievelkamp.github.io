@@ -20,7 +20,6 @@ export const projectData: ProjectData[] = [
             "Vike (SSR)",
             "Adobe Software",
             "Unreal Engine",
-            "Blender",
         ],
         link: "https://www.julianschievelkamp.com/",
     },
