@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { borderRadius, queries } from "styles/variables";
+import { queries } from "styles/variables";
 
 const fadeIn = keyframes`
     0% { opacity: 0; transform: translateY(10rem); }
@@ -18,7 +18,6 @@ export const StyledProjectItem = styled.li<{ $index: number }>`
     padding: 1rem;
     background-color: white;
     border: 1px solid lightgrey;
-    border-radius: ${borderRadius.edged};
 
     display: flex;
     gap: 1rem;

@@ -21,6 +21,7 @@ export const projectData: ProjectData[] = [
             "React",
             "Typescript",
             "Vike (SSR)",
+            "Claude Code",
             "Adobe Software",
             "Unreal Engine",
         ],

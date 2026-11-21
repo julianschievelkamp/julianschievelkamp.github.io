@@ -4,6 +4,7 @@ import { StyledProjectItem } from "./ProjectItem.styles";
 import Previews from "./Previews/Previews";
 import Tools from "./Tools/Tools";
 import Headline from "elements/components/Headline/Headline";
+import Link from "elements/components/Link/Link";
 
 interface ProjectItemProps {
     index: number;
@@ -16,8 +17,14 @@ const ProjectItem = ({ index, project }: ProjectItemProps) => {
             <Previews previews={project.previews} />
 
             <div>
-                <Headline type="h2">{project.title}</Headline>
+                <Headline type="h2">
+                    <Link href={project.link} target="_blank">
+                        {project.title}
+                    </Link>
+                </Headline>
+
                 <Text margin="1rem 0">{project.description}</Text>
+
                 <Tools tools={project.tools} />
             </div>
         </StyledProjectItem>

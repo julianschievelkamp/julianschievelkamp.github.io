@@ -4,7 +4,7 @@ import { queries } from "styles/variables";
 export const Main = styled.main`
     padding: 1rem;
 
-    @media ${queries.lg} {
+    @media ${queries.md} {
         padding: 2rem;
     }
 `;

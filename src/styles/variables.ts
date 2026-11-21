@@ -8,8 +8,6 @@ export const transition = {
 export const colors = {
     highlight: "rgba(255, 200, 0, 1)",
     secondary: "rgba(0, 0, 0, 0.6)",
-    playButton: "rgba(0, 0, 0, 0.4)",
-    fade: "rgb(245, 245, 245)",
 };
 
 export const queries = {
@@ -22,9 +20,4 @@ export const queries = {
     landscape: "(orientation: landscape)",
     landscapeLgMax:
         "screen and (max-width: 991px) and (orientation: landscape)",
-};
-
-export const borderRadius = {
-    round: "100px",
-    edged: "10px",
 };
