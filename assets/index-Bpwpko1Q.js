@@ -63,11 +63,11 @@ Error generating stack: `+e.message+`
         animation-delay: 0s;
     }
 `,gr=Yn`
-    0% { width: 0; }
-    100% { width: 100%; }
+    from { width: 0; }
+    to { width: 100%; }
 `,_r=Yn`
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    from { opacity: 0; }
+    to { opacity: 1; }
 `,vr=Wn.header`
     position: relative;
     padding-bottom: 1rem;
@@ -95,6 +95,7 @@ Error generating stack: `+e.message+`
     justify-content: space-between;
     flex-wrap: wrap;
 `,{title:br,links:xr,impressum:Sr}=y.header,Cr=()=>(0,F.jsxs)(vr,{children:[(0,F.jsx)(Qn,{children:br}),(0,F.jsxs)(yr,{children:[(0,F.jsx)(`div`,{children:xr.map(({icon:e,label:t,url:n})=>(0,F.jsx)(pr,{icon:e,label:t,url:n},t))}),(0,F.jsx)(pr,{icon:Sr.icon,label:Sr.label,url:Sr.url})]})]}),wr=[{title:`Portfolio`,description:`A gallery-like portfolio for my fine art photography and video work, built with React, TypeScript and Vike as a fully pre-rendered static site. Highlights include truly gapless audio loops built on the Web Audio API and a custom pinch-to-zoom for exploring artwork details on touch devices. Accessibility and SEO were part of the design from the start, with semantic markup, keyboard navigation and structured data.`,preview:`/assets/portfolio-C5YcJzRp.jpg`,tools:[`React`,`Typescript`,`Vike (SSR)`,`Adobe Software`,`Unreal Engine`],link:`https://www.julianschievelkamp.com/`}],Tr=Wn.img`
+    display: block;
     width: 100%;
     max-width: 100%;
     pointer-events: none;
@@ -104,8 +105,8 @@ Error generating stack: `+e.message+`
     -webkit-user-select: none;
     -ms-user-select: none;
 `,Er=({alt:e,src:t})=>(0,F.jsx)(Tr,{alt:e,src:t}),Dr=Yn`
-    0% { opacity: 0; transform: translateY(2rem); }
-    100% { opacity: 1;  transform: translateY(0);}
+    from { opacity: 0; transform: translateY(2rem); }
+    to { opacity: 1;  transform: translateY(0);}
 `,Or=Wn.li`
     opacity: 0;
     ${({$index:e})=>hr(Dr,`${e*.2}s`)}
@@ -123,7 +124,6 @@ Error generating stack: `+e.message+`
         grid-template-columns: 1fr 1fr;
     }
 `,kr=Wn(ir)`
-    display: inline-flex;
     height: fit-content;
 `,Ar=Wn(ur)`
     margin: 1rem 0;
@@ -151,14 +151,14 @@ Error generating stack: `+e.message+`
         font-family: "PlayfairDisplay";
         font-style: normal;
         src: url(${`/assets/PlayfairDisplay-CSUZDoAs.woff2`}) format("woff2");
-        font-display: swap;
+        font-display: block;
     }
 
     @font-face {
         font-family: "Poppins";
         font-style: normal;
         src: url(${`/assets/Poppins-Light-BBOoPhLm.woff2`}) format("woff2");
-        font-display: swap;
+        font-display: block;
     }
 
     @font-face {
@@ -166,7 +166,7 @@ Error generating stack: `+e.message+`
         font-style: normal;
         font-weight: bold;
         src: url(${`/assets/Poppins-Bold--aKA7T72.woff2`}) format("woff2");
-        font-display: swap;
+        font-display: block;
     }
 `};
 
