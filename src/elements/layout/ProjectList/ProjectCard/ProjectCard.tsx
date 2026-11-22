@@ -6,6 +6,7 @@ import Text from "elements/components/Text/Text";
 
 import {
     Description,
+    PreviewLink,
     StyledProjectCard,
     Tool,
     Tools,
@@ -19,12 +20,12 @@ interface ProjectCardProps {
 const ProjectCard = ({ index, project }: ProjectCardProps) => {
     return (
         <StyledProjectCard $index={index}>
-            <Link href={project.link} target="_blank">
+            <PreviewLink href={project.link} target="_blank">
                 <Image
                     src={project.preview}
                     alt={`Preview of ${project.title}`}
                 />
-            </Link>
+            </PreviewLink>
 
             <section>
                 <Headline type="h2">

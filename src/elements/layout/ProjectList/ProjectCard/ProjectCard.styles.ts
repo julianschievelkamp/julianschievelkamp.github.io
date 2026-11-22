@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
+import Link from "elements/components/Link/Link";
 import Text from "elements/components/Text/Text";
 import { playOnce } from "styles/animations";
 import { colors, queries } from "styles/variables";
@@ -25,6 +26,11 @@ export const StyledProjectCard = styled.li<{ $index: number }>`
     @media ${queries.md} {
         grid-template-columns: 1fr 1fr;
     }
+`;
+
+export const PreviewLink = styled(Link)`
+    display: inline-flex;
+    height: fit-content;
 `;
 
 export const Description = styled(Text)`
