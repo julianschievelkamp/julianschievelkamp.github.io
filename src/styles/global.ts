@@ -37,5 +37,6 @@ export default createGlobalStyle`
 
     :focus-visible {
         outline: 2px solid ${colors.highlight};
+        outline-offset: 0;
     }
 `;
