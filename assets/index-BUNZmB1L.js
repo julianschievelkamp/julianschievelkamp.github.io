@@ -94,7 +94,7 @@ Error generating stack: `+e.message+`
     align-items: flex-end;
     justify-content: space-between;
     flex-wrap: wrap;
-`,{title:br,links:xr,impressum:Sr}=y.header,Cr=()=>(0,F.jsxs)(vr,{children:[(0,F.jsx)(Qn,{children:br}),(0,F.jsxs)(yr,{children:[(0,F.jsx)(`div`,{children:xr.map(({icon:e,label:t,url:n})=>(0,F.jsx)(pr,{icon:e,label:t,url:n},t))}),(0,F.jsx)(pr,{icon:Sr.icon,label:Sr.label,url:Sr.url})]})]}),wr=[{title:`Portfolio`,description:`A gallery-like portfolio for my fine art photography and video work, built with React, TypeScript and Vike as a fully pre-rendered static site. Highlights include truly gapless audio loops built on the Web Audio API and a custom pinch-to-zoom for exploring artwork details on touch devices. Accessibility and SEO were part of the design from the start, with semantic markup, keyboard navigation and structured data.`,preview:`/assets/portfolio-Bwq5qx-5.jpg`,tools:[`React`,`Typescript`,`Vike (SSR)`,`Adobe Software`,`Unreal Engine`],link:`https://www.julianschievelkamp.com/`}],Tr=Wn.img`
+`,{title:br,links:xr,impressum:Sr}=y.header,Cr=()=>(0,F.jsxs)(vr,{children:[(0,F.jsx)(Qn,{children:br}),(0,F.jsxs)(yr,{children:[(0,F.jsx)(`div`,{children:xr.map(({icon:e,label:t,url:n})=>(0,F.jsx)(pr,{icon:e,label:t,url:n},t))}),(0,F.jsx)(pr,{icon:Sr.icon,label:Sr.label,url:Sr.url})]})]}),wr=[{title:`Portfolio`,description:`A gallery-like portfolio for my fine art photography and video work, built with React, TypeScript and Vike as a fully pre-rendered static site. Highlights include truly gapless audio loops built on the Web Audio API and a custom pinch-to-zoom for exploring artwork details on touch devices. Accessibility and SEO were part of the design from the start, with semantic markup, keyboard navigation and structured data.`,preview:`/assets/portfolio-C5YcJzRp.jpg`,tools:[`React`,`Typescript`,`Vike (SSR)`,`Adobe Software`,`Unreal Engine`],link:`https://www.julianschievelkamp.com/`}],Tr=Wn.img`
     width: 100%;
     max-width: 100%;
     pointer-events: none;
@@ -122,19 +122,22 @@ Error generating stack: `+e.message+`
     @media ${nr.md} {
         grid-template-columns: 1fr 1fr;
     }
-`,kr=Wn(ur)`
+`,kr=Wn(ir)`
+    display: inline-flex;
+    height: fit-content;
+`,Ar=Wn(ur)`
     margin: 1rem 0;
-`,Ar=Wn.ul`
+`,jr=Wn.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 0;
-`,jr=Wn.li`
+`,Mr=Wn.li`
     list-style: none;
     padding: 0.5rem 1rem;
     background: ${tr.background};
     border: 1px solid ${tr.border};
-`,Mr=({index:e,project:t})=>(0,F.jsxs)(Or,{$index:e,children:[(0,F.jsx)(ir,{href:t.link,target:`_blank`,children:(0,F.jsx)(Er,{src:t.preview,alt:`Preview of ${t.title}`})}),(0,F.jsxs)(`section`,{children:[(0,F.jsx)(Qn,{type:`h2`,children:(0,F.jsx)(ir,{href:t.link,target:`_blank`,children:t.title})}),(0,F.jsx)(kr,{children:t.description}),(0,F.jsx)(Ar,{children:t.tools.map(e=>(0,F.jsx)(jr,{children:(0,F.jsx)(ur,{children:e})},e))})]})]}),Nr=Wn.ul`
+`,Nr=({index:e,project:t})=>(0,F.jsxs)(Or,{$index:e,children:[(0,F.jsx)(kr,{href:t.link,target:`_blank`,children:(0,F.jsx)(Er,{src:t.preview,alt:`Preview of ${t.title}`})}),(0,F.jsxs)(`section`,{children:[(0,F.jsx)(Qn,{type:`h2`,children:(0,F.jsx)(ir,{href:t.link,target:`_blank`,children:t.title})}),(0,F.jsx)(Ar,{children:t.description}),(0,F.jsx)(jr,{children:t.tools.map(e=>(0,F.jsx)(Mr,{children:(0,F.jsx)(ur,{children:e})},e))})]})]}),Pr=Wn.ul`
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -142,7 +145,7 @@ Error generating stack: `+e.message+`
     padding: 0;
     margin: 0;
     list-style: none;
-`,Pr=()=>(0,F.jsx)(Nr,{children:wr.map((e,t)=>(0,F.jsx)(Mr,{index:t,project:e},e.title))}),Fr=Kn`
+`,Fr=()=>(0,F.jsx)(Pr,{children:wr.map((e,t)=>(0,F.jsx)(Nr,{index:t,project:e},e.title))}),Ir=Kn`
     ${Vn`
     @font-face {
         font-family: "PlayfairDisplay";
@@ -199,11 +202,11 @@ Error generating stack: `+e.message+`
     :focus-visible {
         outline: 2px solid ${tr.highlight};
     }
-`,Ir=Wn.main`
+`,Lr=Wn.main`
     max-width: 992px;
     padding: 1rem;
 
     @media ${nr.md} {
         padding: 2rem;
     }
-`;(0,v.createRoot)(document.getElementById(`root`)).render((0,F.jsx)(_.StrictMode,{children:(0,F.jsx)(()=>(0,F.jsxs)(F.Fragment,{children:[(0,F.jsx)(Fr,{}),(0,F.jsxs)(Ir,{children:[(0,F.jsx)(Cr,{}),(0,F.jsx)(Pr,{})]})]}),{})}));
+`;(0,v.createRoot)(document.getElementById(`root`)).render((0,F.jsx)(_.StrictMode,{children:(0,F.jsx)(()=>(0,F.jsxs)(F.Fragment,{children:[(0,F.jsx)(Ir,{}),(0,F.jsxs)(Lr,{children:[(0,F.jsx)(Cr,{}),(0,F.jsx)(Fr,{})]})]}),{})}));
