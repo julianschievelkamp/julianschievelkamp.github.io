@@ -6,8 +6,8 @@ import { playOnce } from "styles/animations";
 import { colors, queries } from "styles/variables";
 
 const fadeIn = keyframes`
-    0% { opacity: 0; transform: translateY(2rem); }
-    100% { opacity: 1;  transform: translateY(0);}
+    from { opacity: 0; transform: translateY(2rem); }
+    to { opacity: 1;  transform: translateY(0);}
 `;
 
 export const StyledProjectCard = styled.li<{ $index: number }>`
@@ -29,7 +29,6 @@ export const StyledProjectCard = styled.li<{ $index: number }>`
 `;
 
 export const PreviewLink = styled(Link)`
-    display: inline-flex;
     height: fit-content;
 `;
 

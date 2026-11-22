@@ -3,14 +3,14 @@ import styled, { keyframes } from "styled-components";
 import { playOnce } from "styles/animations";
 import { colors } from "styles/variables";
 
-const fadeInDivider = keyframes`
-    0% { width: 0; }
-    100% { width: 100%; }
+const fadeInBorder = keyframes`
+    from { width: 0; }
+    to { width: 100%; }
 `;
 
 const fadeInHeader = keyframes`
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    from { opacity: 0; }
+    to { opacity: 1; }
 `;
 
 export const StyledHeader = styled.header`
@@ -30,7 +30,7 @@ export const StyledHeader = styled.header`
         height: 1px;
 
         width: 0;
-        ${playOnce(fadeInDivider, "0.2s")}
+        ${playOnce(fadeInBorder, "0.2s")}
     }
 `;
 
