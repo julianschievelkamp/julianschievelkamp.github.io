@@ -201,6 +201,7 @@ Error generating stack: `+e.message+`
 
     :focus-visible {
         outline: 2px solid ${tr.highlight};
+        outline-offset: 0;
     }
 `,Lr=Wn.main`
     max-width: 992px;
