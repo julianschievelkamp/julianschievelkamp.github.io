@@ -14,7 +14,7 @@ Error generating stack: `+e.message+`
     font-family: "PlayfairDisplay", sans-serif;
     font-weight: 900;
     line-height: 1.5;
-`,Zn=o((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),F=o(((e,t)=>{t.exports=Zn()}))(),Qn=({children:e,type:t=`h1`})=>(0,F.jsx)(Xn,{as:t,children:e}),$n=300,er={default:`${$n}ms ease-out`,fast:`${$n/3}ms ease-out`},tr={background:`whitesmoke`,border:`lightgrey`,highlight:`rgba(255, 200, 0, 1)`,secondary:`rgba(0, 0, 0, 0.6)`},nr={sm:`screen and (min-width: 576px)`,md:`screen and (min-width: 768px)`,lg:`screen and (min-width: 992px)`,xl:`screen and (min-width: 1200px)`,hover:`(hover: hover)`},rr=Wn.a`
+`,Zn=o((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),F=o(((e,t)=>{t.exports=Zn()}))(),Qn=({children:e,type:t=`h1`})=>(0,F.jsx)(Xn,{as:t,children:e}),$n=300,er={default:`${$n}ms ease-out`,fast:`${$n/3}ms ease-out`},tr={background:`whitesmoke`,border:`lightgrey`,highlight:`rgba(255, 192, 0, 1)`,secondary:`rgba(0, 0, 0, 0.6)`},nr={sm:`screen and (min-width: 576px)`,md:`screen and (min-width: 768px)`,lg:`screen and (min-width: 992px)`,xl:`screen and (min-width: 1200px)`,hover:`(hover: hover)`},rr=Wn.a`
     position: relative;
     color: currentColor;
     text-decoration: ${({$underline:e})=>e?`underline`:`none`};
@@ -137,7 +137,7 @@ Error generating stack: `+e.message+`
     padding: 0.5rem 1rem;
     background: ${tr.background};
     border: 1px solid ${tr.border};
-`,Nr=({index:e,project:t})=>(0,F.jsxs)(Or,{$index:e,children:[(0,F.jsx)(kr,{href:t.link,target:`_blank`,children:(0,F.jsx)(Er,{src:t.preview,alt:`Preview of ${t.title}`})}),(0,F.jsxs)(`section`,{children:[(0,F.jsx)(Qn,{type:`h2`,children:(0,F.jsx)(ir,{href:t.link,target:`_blank`,children:t.title})}),(0,F.jsx)(Ar,{children:t.description}),(0,F.jsx)(jr,{children:t.tools.map(e=>(0,F.jsx)(Mr,{children:(0,F.jsx)(ur,{children:e})},e))})]})]}),Pr=Wn.ul`
+`,Nr=({index:e,project:t})=>(0,F.jsxs)(Or,{$index:e,children:[(0,F.jsx)(kr,{href:t.link,target:`_blank`,tabIndex:-1,children:(0,F.jsx)(Er,{src:t.preview,alt:`Preview of ${t.title}`})}),(0,F.jsxs)(`section`,{children:[(0,F.jsx)(Qn,{type:`h2`,children:(0,F.jsx)(ir,{href:t.link,target:`_blank`,children:t.title})}),(0,F.jsx)(Ar,{children:t.description}),(0,F.jsx)(jr,{children:t.tools.map(e=>(0,F.jsx)(Mr,{children:(0,F.jsx)(ur,{children:e})},e))})]})]}),Pr=Wn.ul`
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -200,8 +200,7 @@ Error generating stack: `+e.message+`
     }
 
     :focus-visible {
-        outline: 2px solid ${tr.highlight};
-        outline-offset: 0;
+        outline: none;
     }
 `,Lr=Wn.main`
     max-width: 992px;
