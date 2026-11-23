@@ -8,7 +8,7 @@ export const transition = {
 export const colors = {
     background: "whitesmoke",
     border: "lightgrey",
-    highlight: "rgba(255, 200, 0, 1)",
+    highlight: "rgba(255, 192, 0, 1)",
     secondary: "rgba(0, 0, 0, 0.6)",
 };
 

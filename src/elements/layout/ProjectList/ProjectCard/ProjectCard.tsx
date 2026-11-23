@@ -20,7 +20,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ index, project }: ProjectCardProps) => {
     return (
         <StyledProjectCard $index={index}>
-            <PreviewLink href={project.link} target="_blank">
+            <PreviewLink href={project.link} target="_blank" tabIndex={-1}>
                 <Image
                     src={project.preview}
                     alt={`Preview of ${project.title}`}
