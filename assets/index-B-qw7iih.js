@@ -25,7 +25,7 @@ Error generating stack: `+e.message+`
         color: ${tr.highlight};
         transition: color ${er.fast};
     }
-`,ir=({target:e,underline:t=!0,...n})=>(0,F.jsx)(rr,{tabIndex:0,...n,target:e,rel:e===`_blank`?`noopener noreferrer`:void 0,$underline:t}),ar=`1rem`,or=Wn.span`
+`,ir=({tabIndex:e=0,target:t,underline:n=!0,...r})=>(0,F.jsx)(rr,{...r,target:t,rel:t===`_blank`?`noopener noreferrer`:void 0,$underline:n,tabIndex:e}),ar=`1rem`,or=Wn.span`
     display: flex;
     align-items: center;
     justify-content: center;
