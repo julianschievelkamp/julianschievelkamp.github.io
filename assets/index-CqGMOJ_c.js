@@ -182,18 +182,17 @@ Error generating stack: `+e.message+`
         min-height: 100svh;
         position: relative;
         overflow-x: clip;
-
     }
 
     html {
         text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
+        scrollbar-gutter: stable;
+        overflow-y: auto;
     }
 
     body {
         background-color: ${tr.background};
-        overflow-y: scroll;
-        
         display: flex;
         flex-direction: column;
         align-items: center;
